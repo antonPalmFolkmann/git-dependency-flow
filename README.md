@@ -67,6 +67,14 @@ Running build command: []
 ...
 ```
 
+    
+```bash
+$ codeql database analyze ./database/ --format=csv --output=data.csv codeql/python-queries --download
+Initializing database at /../../database.
+Running build command: []
+...
+```
+    
 ## CodeQL starter workspace
 
 The [CodeQL starter workspace](https://github.com/github/vscode-codeql-starter) contains predefined queries for a selection of languages and folders for custom queries. This is were databases, created with the CodeQL CLI, can be imported and queried.
