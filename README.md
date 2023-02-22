@@ -4,6 +4,8 @@
 
 ## Setup CodeQL CLI
 
+### For Linux
+
 Using the zip archive:
 
 - Download CodeQL CLI from [the website](https://github.com/github/codeql-cli-binaries/releases)
@@ -18,6 +20,7 @@ Using the zip archive:
     
     </aside>
     
+### For macOS
 
 Using Homebrew:
 
