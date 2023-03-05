@@ -1,116 +1,78 @@
 # git-dependency-flow
 
-# Prerequisites
-
-## Setup CodeQL CLI
-
-### For Linux
-
-Using the zip archive:
-
-- Download CodeQL CLI from [the website](https://github.com/github/codeql-cli-binaries/releases)
-- [Extract the zip-archive](https://docs.github.com/en/code-security/codeql-cli/using-the-codeql-cli/getting-started-with-the-codeql-cli#2-extract-the-zip-archive)
-- Launch CodeQL:
-    
-    <aside>
-    💡 Once extracted, you can run CodeQL processes by running the codeql executable in a couple of ways:
-    
-    1. By executing <extraction-root>/codeql/codeql, where <extraction-root> is the folder where you extracted the CodeQL CLI package.
-    2. By adding <extraction-root>/codeql to your PATH, so that you can run the executable as just codeql.
-    
-    </aside>
-    
-### For macOS
-
-Using Homebrew:
+## Step 1: Install CodeQL CLI
 
 ```bash
-$ brew install --cask codeql
+# Go to downloads folder
+cd $HOME/Downloads
+
+# Getting codeQl from the internet
+wget https://github.com/github/codeql-cli-binaries/releases/download/v2.12.3/codeql-linux64.zip
+
+# Add target folder if it doesn't exist and cd to it
+mkdir -p $HOME/Documents/FlowMethod && cd "$_"
+
+# Unzip to target folder
+unzip -o $HOME/Downloads/codeql-linux64.zip -d .
+
+# Add path to .bashrc
+echo -e "\n# CodeQL\nexport PATH=$PATH:$HOME/Documents/FlowMethod/codeql" >> $HOME/.bashrc
+
+# Run source file to update changes to .bashrc
+source $HOME/.bashrc
+
+# verify that codeql is running properly
+codeql --version
+codeql resolve languages
 ```
 
-Restart the terminal and test if the CLI has been installed correctly:
+With Homebrew:
 
 ```bash
-$ codeql --version
-CodeQL command-line toolchain release 2.12.1.
+brew install codeql
 
-# Or run
-$ codeql resolve languages
+# verify that codeql is running properly
+codeql --version
+codeql resolve languages
+
+mkdir -p $HOME/Documents/FlowMethod && cd "$_"
 ```
 
-## Install CodeQL extension for Visual Studio Code
-
-Install [this extension](https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-codeql) for Visual Studio Code.
-
-# Using CodeQL
-
-## Creating a database from a Python-based repository
-
-- If the target repository is not local, clone the repository.
-- Navigate to the root of the repository.
-- [Create a database](https://codeql.github.com/docs/codeql-cli/creating-codeql-databases/) by running the following:
+## Step 2: Clone target repository
 
 ```bash
-$ codeql database create <database> --language=<language-identifier>
+# Codebase to be analyzed
+git clone https://github.com/zeeguu/api.git target-repo
+git clone https://github.com/github/vscode-codeql-starter.git source-repo
+git clone https://github.com/antonPalmFolkmann/git-dependency-flow.git
 ```
 
-`<database>`: a path for the new database to be created.
-
-`--language`: the identifier for the language to create a database for.
-
-E.g., for a python project where we want to create the database in a folder named “database” at the current location:
+## Step 3: Create database
 
 ```bash
-$ codeql database create ./database/ --language=python
-Initializing database at /../../database.
-Running build command: []
-...
+cd target-repo
+codeql database create ../database/ --language=python
+cd ..
 ```
 
-    
-```bash
-$ codeql database analyze ./database/ --format=csv --output=data.csv codeql/python-queries --download
-Initializing database at /../../database.
-Running build command: []
-...
-```
-    
-## CodeQL starter workspace
-
-The [CodeQL starter workspace](https://github.com/github/vscode-codeql-starter) contains predefined queries for a selection of languages and folders for custom queries. This is were databases, created with the CodeQL CLI, can be imported and queried.
-
-Firstly, clone the starter workspace:
+## Step 4: Copy files
 
 ```bash
-git clone https://github.com/github/vscode-codeql-starter
+cp git-dependency-flow/flowmethod.ql source-repo/codeql-custom-queries-python/
+cp git-dependency-flow/infomap-dictionary.py .
 ```
 
-Next, open the workspace in Visual Studio Code:
+## Step 5: Install packs
 
-`File` → `Open Workspace from File`
+```bash
+cd source-repo/codeql-custom-queries-python
+codeql pack install
+cd ../..
+```
 
-In the file explorer, navigate to the cloned repository and select:
+## Step 6: Run Query and Decode results
 
-`vscode-codeql-starter.code-workspace`
-
-Finally, press:
-
-`Choose Database folder`.
-
-In Visual Studio Code, open the CodeQL extension. In the `DATABASES` tab, select `From a folder` and select the path for the [database created previously](https://www.notion.so/Repository-guide-with-CodeQL-installation-abac8354e9a742c09fcecefecb6a6382).
-
-## Querying databases
-
-Once the start workspace has been setup in Visual Studio Code and a database has been selected, querying can begin.
-
-The starter workspace features predefined queries in the `ql`-folder, and folders for custom queries in the `/codeql-custom-queries-<language-identifier>` folders.
-
-To use a predefined query for the database previously created, navigate to `/ql/python/ql/src/`. Files with the `.ql` extension can be run by right-clicking the file and selecting `CodeQL: Run Queries in Selected Files`. The results will be displayed in a panel on the right hand side.
-
-To use a custom query for the same database, navigate to `/codeql-custom-queries-python`. In the directory you can use the `example.ql` file or create new files for queries. Use the predefined queries for inspiration or become more familiar with QL via the [tutorials](https://codeql.github.com/docs/writing-codeql-queries/ql-tutorials/). Run the queries like before.
-
-## Future points
-
-- Installation of relevant packages
-- File with relevant dependency analysis
-- Generates an output file with dependencies in `.csv` format
+```bash
+codeql query run --database=./database --output=output.bqrs -- source-repo/codeql-custom-queries-python/flowmethod.ql
+codeql bqrs decode --output=decoded-results.csv --format=csv -- output.bqrs
+```
