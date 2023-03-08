@@ -1,15 +1,46 @@
 import csv
-import ctypes
 
-filename="decoded-results.csv"
+def read_csv_file():
+    with open("decoded-results.csv", 'r') as data:
+        dictionary = csv.DictReader(data)
+        index = 1
+        vertices = {}
+        edges = []
 
-with open(filename, 'r') as data:
-    dictionary = csv.DictReader(data)
+        for row in dictionary:
+            path = row["path"]
+            modulePath = row["modulePath"]
 
-    for row in dictionary:
-        row["path"] = ctypes.c_size_t(hash(row["path"])).value
-        row["modulePath"] = ctypes.c_size_t(hash(row["modulePath"])).value
-        print(row["path"], row["modulePath"])
-    
-    for row in dictionary:
-        print(row)
+            if path not in vertices:
+                vertices[path] = index
+                index += 1
+            
+
+            if modulePath not in vertices:
+                vertices[modulePath] = index
+                index += 1
+            
+            edges.append(str(vertices[path]) + " " + str(vertices[modulePath]))
+            
+        return (vertices, edges)
+
+
+def write_to_pajek_format(vertices, edges):
+    with open('pajek.txt', 'w') as writer:
+        writer.write("*Vertices " + str(len(vertices)) + "\n")
+        for key, value in vertices.items():
+            string = str(value) + " \"" + key + "\""
+            writer.write(string + "\n")
+
+        writer.write("*Edges " + str(len(edges)) + "\n")
+        for edge in edges:
+            writer.write(edge + "\n")
+
+
+def main():
+    (vertices, edges) = read_csv_file()
+    write_to_pajek_format(vertices, edges)
+
+
+if __name__ == "__main__":
+    main()
