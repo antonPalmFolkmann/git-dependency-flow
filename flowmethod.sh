@@ -68,6 +68,20 @@ echo "Decoding query ouput"
 codeql bqrs decode --output=decoded-results.csv --format=csv -- output.bqrs
 echo "Decoding done"
 
-echo "Generating ftree"
+echo "Generating vertices and edges"
 python3 infomap-dictionary.py
-echo "ftree generated and ready to be inserted into infomap"
+
+echo "Generating ftree file"
+if ! command -v infomap &> /dev/null
+then
+    if command -v brew &> /dev/null
+    then
+        brew install infomap
+    else
+        pip install infomap
+    fi
+fi
+
+infomap --node-limit 100 --ftree -d pajek.txt .
+echo "ftree file generated"
+echo "Done"
