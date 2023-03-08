@@ -66,5 +66,8 @@ codeql query run --database=./database --output=output.bqrs -- source-repo/codeq
 
 echo "Decoding query ouput"
 codeql bqrs decode --output=decoded-results.csv --format=csv -- output.bqrs
+echo "Decoding done"
 
-echo "Done"
+echo "Generating ftree"
+python3 infomap-dictionary.py
+echo "ftree generated and ready to be inserted into infomap"
