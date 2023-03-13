@@ -1,7 +1,7 @@
 import csv
 
 def read_csv_file():
-    with open("decoded-results.csv", 'r') as data:
+    with open("edges.csv", 'r') as data:
         dictionary = csv.DictReader(data)
         index = 1
         vertices = {}

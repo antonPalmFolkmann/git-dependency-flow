@@ -15,8 +15,8 @@ then
         unzip -o $HOME/Downloads/codeql-linux64.zip -d .
 
         echo -e "\n# CodeQL\nexport PATH=$PATH:$HOME/Documents/FlowMethod/codeql" >> $HOME/.bashrc
-
-        source $HOME/.bashrc
+	
+        source ~/.bashrc
     fi
     
     echo "Verifying that codeql is installed properly"
