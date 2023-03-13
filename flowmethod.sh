@@ -74,12 +74,7 @@ python3 infomap-dictionary.py
 echo "Generating ftree file"
 if ! command -v infomap &> /dev/null
 then
-    if command -v brew &> /dev/null
-    then
-        brew install infomap
-    else
-        pip install infomap
-    fi
+	pip install infomap
 fi
 
 infomap --node-limit 100 --ftree -d pajek.txt .
