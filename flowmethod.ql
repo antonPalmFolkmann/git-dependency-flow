@@ -12,7 +12,7 @@
  }
  
  predicate isWithinScope(File f) {
-   f.getAbsolutePath().matches("%zeeguu%")
+   f.getAbsolutePath().matches("%FlowMethod%")
  }
  
  class ImportedFile extends File {
