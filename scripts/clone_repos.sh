@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd /root/Documents/FlowMethod
+cd /root/FlowMethod
 
 echo "Cloning necessary git repositories..."
 if [ ! -d "./target-repo/" ]

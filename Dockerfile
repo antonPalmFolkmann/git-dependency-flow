@@ -2,7 +2,7 @@ FROM ubuntu:latest
 
 SHELL ["/bin/bash", "-c"]
 
-ENV PATH="$PATH:~/Documents/FlowMethod/codeql"
+ENV PATH="$PATH:~/FlowMethod/codeql"
 
 WORKDIR /root
 
