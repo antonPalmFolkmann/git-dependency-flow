@@ -1,15 +1,20 @@
 FROM ubuntu:latest
 
-WORKDIR /app
+SHELL ["/bin/bash", "-c"]
+
+ENV PATH="$PATH:~/Documents/FlowMethod/codeql"
+
+WORKDIR /root
 
 RUN apt-get -y update
 RUN apt-get -y upgrade
-RUN apt-get install git
-RUN apt-get install pip
-RUN pip install python3
+RUN apt-get -y install git
+RUN apt-get -y install pip
+RUN apt-get -y install python3
+RUN apt-get -y install wget
+RUN apt-get -y install unzip
 RUN pip install infomap
 
-COPY . .
-COPY flowmethod.sh /
+COPY docker-startup-script.sh /root
 
-ENTRYPOINT ["/flowmethod.sh"]
+RUN ["./docker-startup-script.sh"]

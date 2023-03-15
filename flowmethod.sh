@@ -7,7 +7,8 @@ then
         brew install codeql
         mkdir -p $HOME/Documents/FlowMethod && cd "$_"
     else
-        cd $HOME/Downloads
+        mkdir -p $HOME/Downloads && cd "$_"
+        
         wget https://github.com/github/codeql-cli-binaries/releases/download/v2.12.3/codeql-linux64.zip
 
         mkdir -p $HOME/Documents/FlowMethod && cd "$_"
