@@ -14,6 +14,7 @@ RUN apt-get -y install python3
 RUN apt-get -y install wget
 RUN apt-get -y install unzip
 RUN pip install infomap
+RUN pip install virtualenv
 
 COPY docker-startup-script.sh /root
 
