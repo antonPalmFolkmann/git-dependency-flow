@@ -9,7 +9,7 @@ cd ..
 echo "Database created"
 
 echo "Copying required files"
-cp git-dependency-flow/queries/. source-repo/codeql-custom-queries-python/
+cp git-dependency-flow/queries/. source-repo/codeql-custom-queries-python/ -r
 
 echo "Installing packs..."
 cd source-repo/codeql-custom-queries-python
