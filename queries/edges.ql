@@ -12,7 +12,7 @@
  }
  
  predicate isWithinScope(File f) {
-   f.getAbsolutePath().matches("%FlowMethod%")
+   f.getAbsolutePath().matches("%target-repo%")
  }
  
  class ImportedFile extends File {
@@ -37,4 +37,4 @@
  from ImportedFile f, ImportedModule im
  where
    im.getEnclosingModule().getFile().toString() = f.fullPath() 
- select f.shortPath() as path, im.getModules() as modulePath order by path
+ select f.shortPath() as importerFile, im.getModules() as importedModule order by importerFile
