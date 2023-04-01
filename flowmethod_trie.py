@@ -57,26 +57,35 @@ class TrieNode():
 # with the first column containing the module names and the second column containing the paths.
 
 class Trie():
-    def importModules(self):
-        with open("modules.csv", "r") as csv_file:
+    def importConstants(self):
+        with open("data/constants.csv", "r") as csv_file:
             reader = csv.DictReader(csv_file)
             for line in reader:
-                path = line["pathLocation"]
-                module = line["modulePath"]
+                path = line["fileLocation"]
+                module = line["constantModule"]
+                module_components = module.split(".")
+                self.root.insert(module_components, path)
+
+    def importModules(self):
+        with open("data/modules.csv", "r") as csv_file:
+            reader = csv.DictReader(csv_file)
+            for line in reader:
+                path = line["fileLocation"]
+                module = line["moduleName"]
                 module_components = module.split(".")
                 self.root.insert(module_components, path)
     
     def importFunctions(self):
-        with open("functions.csv", "r") as csv_file:
+        with open("data/functions.csv", "r") as csv_file:
             reader = csv.DictReader(csv_file)
             for line in reader:
-                path = line["pathLocation"]
+                path = line["fileLocation"]
                 module = line["functionModule"]
                 module_components = module.split(".")
                 self.root.insert(module_components, path)
 
     def importClasses(self):
-        with open("classes.csv", "r") as csv_file:
+        with open("data/classes.csv", "r") as csv_file:
             reader = csv.DictReader(csv_file)
             for line in reader:
                 path = line["fileLocation"]
@@ -88,6 +97,7 @@ class Trie():
 
     def __init__(self):
         self.root = TrieNode("")
+        self.importConstants()
         self.importModules()
         self.importFunctions()
         self.importClasses()
@@ -97,17 +107,17 @@ class Trie():
 if __name__ == "__main__":
     trie = Trie()
     edges = []
-    with open("edges.csv", "r") as csv_file:
+    with open("data/edges.csv", "r") as csv_file:
             reader = csv.DictReader(csv_file)
             for line in reader:
-                path = line["path"]
-                module = line["modulePath"]
-                module_components = module.split(".")
-                foundPath = trie.root.search(module_components)
-                if foundPath == None:
+                importerFile = line["importerFile"]
+                importedModule = line["importedModule"]
+                module_components = importedModule.split(".")
+                importedFile = trie.root.search(module_components)
+                if importedFile == None:
                     print(module_components)
-                    foundPath = "NONE"
-                edges.append(str(path) + " " + ".".join(module_components) + " " + str(foundPath))
-    with open("new_edges.csv", "w") as writer:
+                    importedFile = "NONE"
+                edges.append(str(importerFile) + " " + ".".join(module_components) + " " + str(importedFile))
+    with open("data/new_edges.csv", "w") as writer:
         for edge in edges:
             writer.write(edge + "\n")
