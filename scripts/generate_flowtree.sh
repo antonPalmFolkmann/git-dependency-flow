@@ -1,6 +1,7 @@
 #!/bin/bash
 
 cd /root/FlowMethod/git-dependency-flow
+touch ./data/newEdges.csv
 
 echo "Generating vertices and edges"
 python3 flowmethod_trie.py
