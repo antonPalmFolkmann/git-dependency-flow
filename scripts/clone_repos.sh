@@ -18,3 +18,8 @@ then
     git clone -q https://github.com/antonPalmFolkmann/git-dependency-flow.git
 fi
 echo "Cloned git repositories"
+
+echo "Checkout to correct branch"
+cd FlowMethod/git-dependency-flow/
+git checkout feature/trie-construction
+cd ../..
