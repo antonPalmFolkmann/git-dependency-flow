@@ -9,10 +9,7 @@ cd ..
 echo "Database created"
 
 echo "Copying required files"
-cp git-dependency-flow/edges.ql source-repo/codeql-custom-queries-python/
-cp git-dependency-flow/vertices.ql source-repo/codeql-custom-queries-python/
-cp git-dependency-flow/infomap-dictionary.py .
-
+cp git-dependency-flow/scripts/ source-repo/codeql-custom-queries-python/
 
 echo "Installing packs..."
 cd source-repo/codeql-custom-queries-python
@@ -21,10 +18,17 @@ cd ../..
 echo "Packs installed"
 
 echo "Running queries"
+codeql query run --database=./database --output=classes.bqrs -- source-repo/codeql-custom-queries-python/classes.ql
+codeql query run --database=./database --output=constants.bqrs -- source-repo/codeql-custom-queries-python/constants.ql
 codeql query run --database=./database --output=edges.bqrs -- source-repo/codeql-custom-queries-python/edges.ql
-codeql query run --database=./database --output=vertices.bqrs -- source-repo/codeql-custom-queries-python/vertices.ql
+codeql query run --database=./database --output=functions.bqrs -- source-repo/codeql-custom-queries-python/functions.ql
+codeql query run --database=./database --output=modules.bqrs -- source-repo/codeql-custom-queries-python/modules.ql
+echo "Queries done"
 
 echo "Decoding query ouput"
+codeql bqrs decode --output=classes.csv --format=csv -- classes.bqrs
+codeql bqrs decode --output=constants.csv --format=csv -- constants.bqrs
 codeql bqrs decode --output=edges.csv --format=csv -- edges.bqrs
-codeql bqrs decode --output=vertices.csv --format=csv -- vertices.bqrs
+codeql bqrs decode --output=functions.csv --format=csv -- functions.bqrs
+codeql bqrs decode --output=modules.csv --format=csv -- modules.bqrs
 echo "Decoding done"
