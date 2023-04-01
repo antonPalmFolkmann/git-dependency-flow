@@ -18,17 +18,17 @@ cd ../..
 echo "Packs installed"
 
 echo "Running queries"
-codeql query run --database=./database --output=classes.bqrs -- source-repo/codeql-custom-queries-python/classes.ql
-codeql query run --database=./database --output=constants.bqrs -- source-repo/codeql-custom-queries-python/constants.ql
-codeql query run --database=./database --output=edges.bqrs -- source-repo/codeql-custom-queries-python/edges.ql
-codeql query run --database=./database --output=functions.bqrs -- source-repo/codeql-custom-queries-python/functions.ql
-codeql query run --database=./database --output=modules.bqrs -- source-repo/codeql-custom-queries-python/modules.ql
+codeql query run --database=./database --output=git-dependency-flow/raw/classes.bqrs -- source-repo/codeql-custom-queries-python/classes.ql
+codeql query run --database=./database --output=git-dependency-flow/raw/constants.bqrs -- source-repo/codeql-custom-queries-python/constants.ql
+codeql query run --database=./database --output=git-dependency-flow/raw/edges.bqrs -- source-repo/codeql-custom-queries-python/edges.ql
+codeql query run --database=./database --output=git-dependency-flow/raw/functions.bqrs -- source-repo/codeql-custom-queries-python/functions.ql
+codeql query run --database=./database --output=git-dependency-flow/raw/modules.bqrs -- source-repo/codeql-custom-queries-python/modules.ql
 echo "Queries done"
 
 echo "Decoding query ouput"
-codeql bqrs decode --output=classes.csv --format=csv -- classes.bqrs
-codeql bqrs decode --output=constants.csv --format=csv -- constants.bqrs
-codeql bqrs decode --output=edges.csv --format=csv -- edges.bqrs
-codeql bqrs decode --output=functions.csv --format=csv -- functions.bqrs
-codeql bqrs decode --output=modules.csv --format=csv -- modules.bqrs
+codeql bqrs decode --output=git-dependency-flow/data/classes.csv --format=csv -- git-dependency-flow/raw/classes.bqrs
+codeql bqrs decode --output=git-dependency-flow/data/constants.csv --format=csv -- git-dependency-flow/raw/constants.bqrs
+codeql bqrs decode --output=git-dependency-flow/data/edges.csv --format=csv -- git-dependency-flow/raw/edges.bqrs
+codeql bqrs decode --output=git-dependency-flow/data/functions.csv --format=csv -- git-dependency-flow/raw/functions.bqrs
+codeql bqrs decode --output=git-dependency-flow/data/modules.csv --format=csv -- git-dependency-flow/raw/modules.bqrs
 echo "Decoding done"

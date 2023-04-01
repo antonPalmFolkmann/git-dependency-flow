@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd /root/FlowMethod
+cd /root/FlowMethod/git-dependency-flow
 
 echo "Generating vertices and edges"
 python3 flowmethod_trie.py
