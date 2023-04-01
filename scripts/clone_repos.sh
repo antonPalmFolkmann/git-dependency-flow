@@ -20,6 +20,6 @@ fi
 echo "Cloned git repositories"
 
 echo "Checkout to correct branch"
-cd FlowMethod/git-dependency-flow/
+cd git-dependency-flow/
 git checkout feature/trie-construction
-cd ../..
+cd ..
