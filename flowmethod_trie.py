@@ -117,8 +117,8 @@ if __name__ == "__main__":
                 if importedFile == None:
                     print(module_components)
                     importedFile = "NONE"
-                edges.append(str(importerFile) + " " + ".".join(module_components) + " " + str(importedFile))
+                edges.append(str(importerFile) + "," + ".".join(module_components) + "," + str(importedFile))
     with open("data/new_edges.csv", "w") as writer:
-        writer.write("importerFile importedModule importedFile" + "\n")
+        writer.write("importerFile,importedModule,importedFile" + "\n")
         for edge in edges:
             writer.write(edge + "\n")
