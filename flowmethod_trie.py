@@ -65,6 +65,8 @@ class Trie():
                 module = line["constantModule"]
                 module_components = module.split(".")
                 self.root.insert(module_components, path)
+                del module_components[-2]
+                self.root.insert(module_components, path)
 
     def importModules(self):
         with open("data/modules.csv", "r") as csv_file:
