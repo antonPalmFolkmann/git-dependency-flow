@@ -1,26 +1,28 @@
 import csv
 
 def read_csv_file():
-    with open("edges.csv", 'r') as data:
+    with open("data/new_edges.csv", 'r') as data:
         dictionary = csv.DictReader(data)
         index = 1
         vertices = {}
         edges = []
 
         for row in dictionary:
-            path = row["path"]
-            modulePath = row["modulePath"]
+            importerFile = row["importerFile"]
+            importedFile = row["importedFile"]
 
-            if path not in vertices:
-                vertices[path] = index
+            if importerFile not in vertices:
+                vertices[importerFile] = index
                 index += 1
             
 
-            if modulePath not in vertices:
-                vertices[modulePath] = index
+            if importedFile not in vertices:
+                vertices[importedFile] = index
                 index += 1
+            elif importedFile == "NONE":
+                continue
             
-            edges.append(str(vertices[path]) + " " + str(vertices[modulePath]))
+            edges.append(str(vertices[importerFile]) + " " + str(vertices[importedFile]))
             
         return (vertices, edges)
 

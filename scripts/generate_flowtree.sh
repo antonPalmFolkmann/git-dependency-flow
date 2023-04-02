@@ -1,9 +1,10 @@
 #!/bin/bash
 
-cd /root/FlowMethod
+cd /root/FlowMethod/git-dependency-flow
 
 echo "Generating vertices and edges"
-python3 infomap-dictionary.py
+python3 flowmethod_trie.py
+python3 infomap_dictionary.py
 
 echo "Generating ftree file"
 if ! command -v infomap &> /dev/null
