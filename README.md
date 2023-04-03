@@ -16,11 +16,11 @@ Run docker image:
 docker run -it antonfolkmann/flowmethod bash
 ```
 
-Inside the docker container go to the scripts folder and execute the scripts in the following sequence:
+Inside the docker container go to the scripts folder and execute the scripts in the following sequence from the root directory:
 
-- `clone_repos.sh`
+- `./scripts/clone_repos.sh`
     - Here, it is important to give your git username and a Git Authentication Token, as passwords don’t work for GitHub CLI
-- `run_codeql.sh`
-- `generate_flowtree.sh`
+- `./scripts/run_codeql.sh`
+- `./scripts/generate_flowtree.sh`
 
 The flowtree has now been created, and is ready for `mapequation.org/infomap`
