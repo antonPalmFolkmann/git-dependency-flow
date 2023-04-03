@@ -19,7 +19,7 @@ docker run -it antonfolkmann/flowmethod bash
 Inside the docker container go to the scripts folder and execute the scripts in the following sequence from the root directory:
 
 - `./scripts/clone_repos.sh`
-    - Here, it is important to give your git username and a Git Authentication Token, as passwords don’t work for GitHub CLI
+    - Here, it is important to only give inputs for public Python repositories such as Zeeguu. An example of URL could be https://github.com/zeeguu/api.git
 - `./scripts/run_codeql.sh`
 - `./scripts/generate_flowtree.sh`
 
