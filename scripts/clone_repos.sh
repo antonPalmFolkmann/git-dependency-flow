@@ -14,6 +14,10 @@ then
     git clone -q https://github.com/antonPalmFolkmann/git-dependency-flow.git
 fi
 
+cd git-dependency-flow
+git checkout feature/prompt-git-url
+cd ..
+
 echo "Cloned git repositories"
 
 read -p  "Input target GitHub repository URL: " target_repo_url
