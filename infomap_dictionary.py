@@ -1,47 +1,53 @@
 import csv
+import networkx as nx
+from infomap import Infomap
+import matplotlib.pyplot as plt
+
 
 def read_csv_file():
     with open("data/new_edges.csv", 'r') as data:
+        dg = nx.DiGraph()
+
         dictionary = csv.DictReader(data)
-        index = 1
-        vertices = {}
-        edges = []
 
         for row in dictionary:
             importerFile = row["importerFile"]
             importedFile = row["importedFile"]
 
-            if importerFile not in vertices:
-                vertices[importerFile] = index
-                index += 1
-            
-
-            if importedFile not in vertices:
-                vertices[importedFile] = index
-                index += 1
-            elif importedFile == "NONE":
+            if importedFile == "NONE":
                 continue
-            
-            edges.append(str(vertices[importerFile]) + " " + str(vertices[importedFile]))
-            
-        return (vertices, edges)
 
+            if not dg.has_node(importerFile):
+                dg.add_node(importerFile)
 
-def write_to_pajek_format(vertices, edges):
-    with open('pajek.txt', 'w') as writer:
-        writer.write("*Vertices " + str(len(vertices)) + "\n")
-        for key, value in vertices.items():
-            string = str(value) + " \"" + key + "\""
-            writer.write(string + "\n")
+            if not dg.has_node(importedFile):
+                dg.add_node(importedFile)
 
-        writer.write("*Edges " + str(len(edges)) + "\n")
-        for edge in edges:
-            writer.write(edge + "\n")
-
+            dg.add_edge(importerFile, importedFile)
+        
+        return dg
+    
 
 def main():
-    (vertices, edges) = read_csv_file()
-    write_to_pajek_format(vertices, edges)
+    dg = read_csv_file()
+    """ plt.figure(figsize=(128,128)) 
+    nx.draw(dg, pos = nx.kamada_kawai_layout(dg), with_labels=True)
+    plt.axis('equal') 
+    plt.show()
+    plt.savefig("networkx.png") """
+
+    im = Infomap(
+        ftree=True,
+        two_level=True,
+        silent=True, 
+        node_limit=1000000
+    )
+
+    im.add_networkx_graph(dg)
+
+    im.run()
+
+    im.write_flow_tree("flowmethod.ftree")
 
 
 if __name__ == "__main__":

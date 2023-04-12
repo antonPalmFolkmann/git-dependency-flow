@@ -8,3 +8,4 @@ apt-get -y install wget
 apt-get -y install unzip
 pip install infomap
 pip install virtualenv
+pip install networkx[default]
