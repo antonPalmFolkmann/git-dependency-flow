@@ -33,7 +33,7 @@ def read_csv_file():
 def main():
     dg = read_csv_file()
     plt.figure(figsize=(128,128)) 
-    nx.draw(dg, pos = nx.nx_pydot.pydot_layout(dg), with_labels=True)
+    nx.draw(dg, pos = nx.circular_layout(dg), with_labels=True)
     plt.axis('equal') 
     plt.show()
     plt.savefig("networkx.png")
