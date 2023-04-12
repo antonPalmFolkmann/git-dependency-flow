@@ -18,9 +18,11 @@ def read_csv_file():
 
             if not dg.has_node(importerFile):
                 dg.add_node(importerFile)
+                dg.add_edge(importerFile, importerFile)
 
             if not dg.has_node(importedFile):
                 dg.add_node(importedFile)
+                dg.add_edge(importedFile, importedFile)
 
             dg.add_edge(importerFile, importedFile)
             
@@ -30,11 +32,14 @@ def read_csv_file():
 def main():
     dg = read_csv_file()
 
-    im = Infomap(ftree=True, no_infomap=True)
+    im = Infomap(ftree=True, no_infomap=True, include_self_links=True)
 
     im.add_networkx_graph(dg)
 
     im.run()
+
+    print(im.get_nodes)
+    print(im.get_links)
 
     im.write_flow_tree("flowmethod.ftree")
 
