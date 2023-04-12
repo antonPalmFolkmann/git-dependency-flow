@@ -34,7 +34,15 @@ def read_csv_file():
 
 def main():
     dg = read_csv_file()
-    nx.draw(dg, with_labels=True, pos=nx.spring_layout(dg))
+    options = {
+        "font_size": 10,
+        "node_size": 100,
+        "node_color": "white",
+        "edgecolors": "black",
+        "linewidths": 2,
+        "width": 50,
+    }
+    nx.draw(dg, with_labels=True, **options)
     plt.savefig("networkx.png")
 
     im = Infomap(
