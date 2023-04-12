@@ -34,7 +34,7 @@ def read_csv_file():
 
 def main():
     dg = read_csv_file()
-    nx.draw(dg, with_labels=True,)
+    nx.draw(dg, with_labels=True, pos=nx.spring_layout(dg))
     plt.savefig("networkx.png")
 
     im = Infomap(
