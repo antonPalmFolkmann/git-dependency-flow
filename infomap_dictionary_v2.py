@@ -1,41 +1,38 @@
 import csv
+import networkx as nx
 from infomap import Infomap
 
 
 def read_csv_file():
     with open("data/new_edges.csv", 'r') as data:
+        dg = nx.DiGraph()
+
         dictionary = csv.DictReader(data)
-        index = 0
-        vertices = {}
-        edges = []
 
         for row in dictionary:
             importerFile = row["importerFile"]
             importedFile = row["importedFile"]
 
-            if importerFile not in vertices:
-                vertices[index] = importerFile
-                index += 1
-            
-
-            if importedFile not in vertices:
-                vertices[index] = importedFile
-                index += 1
-            elif importedFile == "NONE":
+            if importedFile == "NONE":
                 continue
+
+            if not dg.has_node(importerFile):
+                dg.add_node(importerFile)
+
+            if not dg.has_node(importedFile):
+                dg.add_node(importedFile)
+
+            dg.add_edge(importerFile, importedFile)
             
-            edges.append(str(vertices[importerFile]) + " " + str(vertices[importedFile]))
-            
-        return (vertices, edges)
+        return dg
     
 
 def main():
-    (vertices, edges) = read_csv_file()
+    dg = read_csv_file()
 
-    im = Infomap(ftree=True, directed=True)
+    im = Infomap(ftree=True)
 
-    im.set_names(vertices)
-    im.add_links(edges)
+    im.add_networkx_graph(dg)
 
     im.run()
 
