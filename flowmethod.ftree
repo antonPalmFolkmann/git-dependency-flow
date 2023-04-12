@@ -1,0 +1,838 @@
+# v2.6.1
+# ./Infomap  --ftree
+# started at 2023-04-12 08:21:53
+# completed in 0.00469145 s
+# partitioned into 3 levels with 14 top modules
+# codelength 4.49251 bits
+# relative codelength savings 15.3486%
+# flow model directed
+# path flow name node_id
+1:1:1 0.163872 "zeeguu/core/__init__.py" 6
+1:1:2 0.139613 "zeeguu/core/word_stats/__init__.py" 167
+1:1:3 0.00549523 "zeeguu/core/model/exercise_outcome.py" 42
+1:1:4 0.00488516 "zeeguu/core/model/exercise_source.py" 120
+1:1:5 0.00402461 "zeeguu/core/sql/query_building.py" 127
+1:1:6 0.00159986 "zeeguu/core/model/unique_code.py" 113
+1:1:7 0.00138411 "zeeguu/core/util/timer_logging_decorator.py" 175
+1:1:8 0.000401524 "zeeguu/api/api/translator.py" 147
+1:1:9 0 "tools/article_crawler.py" 25
+1:1:10 0 "zeeguu/core/test/test_logging.py" 233
+1:2:1 0.0165511 "zeeguu/core/model/url.py" 15
+1:2:2 0.00889076 "zeeguu/core/model/domain_name.py" 194
+2:1 0.0691875 "zeeguu/core/model/article.py" 11
+2:2 0.0478837 "zeeguu/core/model/language.py" 14
+2:3 0.0125612 "zeeguu/core/model/topic.py" 18
+2:4 0.0106708 "zeeguu/core/model/cohort_article_map.py" 79
+2:5 0.00980845 "zeeguu/core/model/feed.py" 16
+2:6 0.00900673 "zeeguu/core/language/difficulty_estimator_factory.py" 71
+2:7 0.00522265 "zeeguu/core/content_retriever/url_downloader.py" 201
+2:8 0.00362178 "zeeguu/core/model/localized_topic.py" 19
+2:9 0.00351752 "zeeguu/core/language/strategies/flesch_kincaid_difficulty_estimator.py" 188
+2:10 0.00292785 "zeeguu/core/util/text.py" 81
+2:11 0.00231235 "zeeguu/core/model/article_word.py" 57
+2:12 0 "tools/migrations/add_icon_name_to_rss_feed.py" 60
+2:13 0 "tools/update_particular_tag.py" 87
+2:14 0 "tools/update_feed.py" 86
+2:15 0 "tools/tag_topics_in_danish.py" 85
+2:16 0 "tools/tag_existing_articles.py" 84
+2:17 0 "tools/recompute_fk_difficulties_for_polish.py" 70
+2:18 0 "tools/map_article_words.py" 56
+2:19 0 "tools/feed_info.py" 44
+2:20 0 "tools/add_standard_topics.py" 17
+2:21 0 "tools/add_rssfeed.py" 13
+3:1 0.0528692 "zeeguu/core/model/user.py" 3
+3:2 0.0141031 "zeeguu/core/model/user_article.py" 34
+3:3 0.0133416 "zeeguu/core/model/cohort.py" 8
+3:4 0.00971813 "zeeguu/core/model/user_activitiy_data.py" 5
+3:5 0.00967113 "zeeguu/core/model/teacher_cohort_map.py" 9
+3:6 0.00805138 "zeeguu/core/model/user_reading_session.py" 32
+3:7 0.00666116 "zeeguu/core/model/teacher.py" 36
+3:8 0.0049132 "zeeguu/core/model/user_language.py" 146
+3:9 0.004182 "zeeguu/core/model/user_exercise_session.py" 33
+3:10 0.00403657 "zeeguu/core/model/personal_copy.py" 119
+3:11 0.00403129 "zeeguu/core/model/user_preference.py" 195
+3:12 0.00281847 "zeeguu/core/model/learner_stats/learner_stats.py" 202
+3:13 0.00249634 "zeeguu/__init__.py" 23
+3:14 0.00232256 "zeeguu/core/emailer/user_activity.py" 168
+3:15 0.000441351 "zeeguu/core/user_activity_hooks/article_interaction_hooks.py" 117
+3:16 0.000387041 "zeeguu/core/account_management/user_account_creation.py" 115
+3:17 0 "tools/recompute_reading_session_after_id.py" 72
+3:18 0 "zeeguu/core/reading_analysis/macro_reading_session.py" 203
+3:19 0 "zeeguu/api/custom_fmd_graphs.py" 151
+3:20 0 "tools/users_recently_active.py" 88
+3:21 0 "tools/migrations/migrate_passwords.py" 62
+3:22 0 "tools/forget_user.py" 54
+3:23 0 "tools/fill_historical_reading_sessions.py" 48
+3:24 0 "tools/_playground.py" 2
+3:25 0 "tools/activity_monitor.py" 4
+3:26 0 "tools/add_all_cohorts_to_teacher.py" 7
+3:27 0 "tools/consolidate_accounts.py" 31
+3:28 0 "tools/article_recommendations.py" 26
+3:29 0 "tools/anonimize_users.py" 24
+4:1 0.0294583 "zeeguu/core/model/__init__.py" 22
+4:2 0.0150594 "zeeguu/core/test/rules/base_rule.py" 208
+4:3 0.00854925 "zeeguu/core/test/rules/language_rule.py" 206
+4:4 0.00761844 "zeeguu/core/language/difficulty_estimator_strategy.py" 187
+4:5 0.00740301 "zeeguu/core/test/model_test_mixin.py" 204
+4:6 0.0072627 "zeeguu/core/test/test_data/mocking_the_web.py" 153
+4:7 0.00608366 "zeeguu/core/test/rules/user_rule.py" 214
+4:8 0.00351752 "zeeguu/core/language/strategies/default_difficulty_estimator.py" 186
+4:9 0.00315167 "zeeguu/core/test/rules/url_rule.py" 209
+4:10 0.00284969 "zeeguu/core/test/rules/article_rule.py" 205
+4:11 0.0023217 "zeeguu/core/test/rules/bookmark_rule.py" 210
+4:12 0.00204725 "zeeguu/core/test/rules/rss_feed_rule.py" 207
+4:13 0.00199983 "zeeguu/core/test/rules/exercise_rule.py" 215
+4:14 0.00184704 "zeeguu/core/model/smartwatch/watch_event_type.py" 196
+4:15 0.00162589 "zeeguu/core/model/smartwatch/watch_interaction_event.py" 197
+4:16 0.00139057 "zeeguu/core/test/rules/outcome_rule.py" 216
+4:17 0.00131523 "zeeguu/core/model/article_difficulty_feedback.py" 148
+4:18 0.00124753 "zeeguu/core/test/rules/user_word_rule.py" 211
+4:19 0.00124753 "zeeguu/core/test/rules/text_rule.py" 212
+4:20 0.0011024 "zeeguu/core/test/rules/cohort_rule.py" 213
+4:21 0.0010687 "zeeguu/core/test/rules/source_rule.py" 217
+4:22 0.00089095 "zeeguu/core/model/bookmark_priority_arts.py" 198
+4:23 0.000734936 "zeeguu/core/test/rules/watch_event_type_rule.py" 221
+4:24 0.00032187 "zeeguu/core/test/rules/user_reading_session_rule.py" 220
+4:25 0.00032187 "zeeguu/core/test/rules/user_article_rule.py" 218
+4:26 0.00032187 "zeeguu/core/test/rules/user_exercise_session_rule.py" 219
+4:27 0.00032187 "zeeguu/core/test/rules/watch_interaction_event_rule.py" 222
+4:28 0 "zeeguu/core/test/test_reading_session.py" 234
+4:29 0 "zeeguu/core/test/test_exercise_session.py" 228
+4:30 0 "zeeguu/core/test/test_text.py" 236
+4:31 0 "zeeguu/core/test/test_url.py" 237
+4:32 0 "zeeguu/core/test/test_user.py" 238
+4:33 0 "zeeguu/core/test/test_user_article.py" 239
+4:34 0 "zeeguu/core/test/test_user_preferences.py" 240
+4:35 0 "zeeguu/core/test/test_user_word.py" 241
+4:36 0 "zeeguu/core/test/test_watch_event.py" 242
+4:37 0 "zeeguu/core/test/test_words_to_study.py" 243
+4:38 0 "zeeguu/core/test/testing_data.py" 244
+4:39 0 "zeeguu/core/test/tests_difficulty_estimator_strategies/test_default_difficulty_estimator.py" 245
+4:40 0 "zeeguu/core/test/tests_difficulty_estimator_strategies/test_flesch_kincaid_difficulty_estimator.py" 246
+4:41 0 "zeeguu/core/test/tests_difficulty_estimator_strategies/test_frequency_difficulty_estimator.py" 247
+4:42 0 "zeeguu/core/test/test_localized_topic.py" 232
+4:43 0 "zeeguu/core/test/test_language.py" 230
+4:44 0 "zeeguu/core/test/test_feed.py" 229
+4:45 0 "zeeguu/core/test/test_domain.py" 227
+4:46 0 "zeeguu/core/test/test_difficulty_estimator_factory.py" 226
+4:47 0 "zeeguu/core/test/test_cohort.py" 225
+4:48 0 "zeeguu/core/test/test_bookmark.py" 224
+4:49 0 "zeeguu/core/test/test_article.py" 223
+4:50 0 "tools/add_word_rank.py" 20
+4:51 0 "zeeguu/core/language/strategies/cognacy_difficulty_estimator.py" 189
+4:52 0 "zeeguu/core/language/strategies/cognacy_wh_difficulty_estimator.py" 190
+4:53 0 "zeeguu/core/language/strategies/frequency_difficulty_estimator.py" 191
+4:54 0 "zeeguu/core/language/strategies/word_history_difficulty_estimator.py" 192
+4:55 0 "zeeguu/core/language/strategies/word_rank_difficulty_estimator.py" 193
+5:1 0.0141118 "zeeguu/api/api/__init__.py" 90
+5:2 0.0120735 "zeeguu/api/api/utils/route_wrappers.py" 105
+5:3 0.00758497 "zeeguu/api/api/utils/json_result.py" 108
+5:4 0.00754914 "zeeguu/core/model/session.py" 37
+5:5 0.0054325 "zeeguu/api/api/speech.py" 91
+5:6 0.00128474 "zeeguu/api/api/feature_toggles.py" 110
+5:7 0.00123044 "zeeguu/api/api/sessions.py" 111
+5:8 0.00120509 "zeeguu/api/api/utils/abort_handling.py" 114
+5:9 0.000843394 "zeeguu/api/api/user_languages.py" 103
+5:10 0.000843394 "zeeguu/api/api/smartwatch.py" 112
+5:11 0.000843394 "zeeguu/api/api/article.py" 109
+5:12 0.000843394 "zeeguu/api/api/own_texts.py" 107
+5:13 0.000843394 "zeeguu/api/api/user_articles.py" 106
+5:14 0.000843394 "zeeguu/api/api/translation.py" 104
+5:15 0.000843394 "zeeguu/api/api/accounts.py" 102
+5:16 0.000843394 "zeeguu/api/api/exercises.py" 101
+5:17 0.000843394 "zeeguu/api/api/recommendations.py" 100
+5:18 0.000843394 "zeeguu/api/api/user.py" 99
+5:19 0.000843394 "zeeguu/api/api/system_languages.py" 98
+5:20 0.000843394 "zeeguu/api/api/user_statistics.py" 97
+5:21 0.000843394 "zeeguu/api/api/activity_tracking.py" 96
+5:22 0.000843394 "zeeguu/api/api/topics.py" 95
+5:23 0.000843394 "zeeguu/api/api/search.py" 94
+5:24 0.000843394 "zeeguu/api/api/user_article.py" 93
+5:25 0.000843394 "zeeguu/api/api/bookmarks_and_words.py" 92
+5:26 0.000501091 "zeeguu/core/user_statistics/activity.py" 149
+5:27 0.000424282 "zeeguu/core/exercises/similar_words.py" 122
+5:28 0 "zeeguu/api/api/student.py" 125
+6:1 0.0212707 "zeeguu/core/model/bookmark.py" 28
+6:2 0.0143689 "zeeguu/core/model/user_word.py" 21
+6:3 0.00818942 "zeeguu/core/model/text.py" 12
+6:4 0.00574701 "zeeguu/core/word_scheduling/basicSR/basicSR.py" 121
+6:5 0.00486044 "zeeguu/core/model/exercise.py" 43
+6:6 0.00161331 "zeeguu/core/bookmark_quality/fit_for_study.py" 173
+6:7 0.00153469 "zeeguu/core/model/word_knowledge/word_interaction_history.py" 83
+6:8 0.00121282 "zeeguu/core/model/word_to_study.py" 199
+6:9 0.000734936 "zeeguu/core/bookmark_quality/negative_qualities.py" 170
+6:10 0.00032187 "zeeguu/core/bookmark_quality/top_bookmarks_for_user.py" 172
+6:11 0.00032187 "zeeguu/core/bookmark_quality/positive_qualities.py" 171
+6:12 0 "zeeguu/core/word_scheduling/adaptive/scheduling_algo.py" 248
+6:13 0 "tools/add_article_id_to_text.py" 10
+6:14 0 "zeeguu/core/crowd_translations/__init__.py" 183
+6:15 0 "zeeguu/core/bookmark_quality/__init__.py" 169
+6:16 0 "tools/saturate_word_interaction_history.py" 80
+6:17 0 "tools/remove_text_duplicates.py" 76
+6:18 0 "tools/past_exercises_for_user.py" 69
+6:19 0 "tools/migrations/towards_single_translation.py" 65
+6:20 0 "tools/migrations/redo_hash.py" 63
+6:21 0 "tools/migrations/fix_text_duplications.py" 61
+6:22 0 "tools/learner_level.py" 55
+6:23 0 "tools/fix_bookmark_learned_status.py" 51
+6:24 0 "tools/fill_historical_exercise_sessions.py" 47
+6:25 0 "tools/exercise_analysis.py" 41
+6:26 0 "tools/bookmark_info.py" 27
+7:1:1 0.0202636 "zeeguu/core/constants.py" 82
+7:1:2 0.0150923 "zeeguu/core/util/encoding.py" 200
+7:2:1 0.00314034 "zeeguu/core/util/__init__.py" 64
+7:2:2 0.00197838 "zeeguu/core/util/hash.py" 77
+8:1 0.00319939 "zeeguu/core/model/search.py" 123
+8:2 0.0023725 "zeeguu/core/model/search_subscription.py" 38
+8:3 0.00235458 "zeeguu/core/model/topic_filter.py" 39
+8:4 0.00235458 "zeeguu/core/model/topic_subscription.py" 40
+8:5 0.00205063 "zeeguu/core/model/search_filter.py" 124
+8:6 0.0019063 "zeeguu/core/model/articles_cache.py" 74
+8:7 0.00064374 "zeeguu/core/content_recommender/elastic_recommender.py" 178
+8:8 0.00064374 "zeeguu/core/content_recommender/mysql_recommender.py" 75
+8:9 0.000376588 "zeeguu/core/elastic/elastic_query_builder.py" 180
+8:10 0 "tools/del_dev_users.py" 35
+8:11 0 "tools/recompute_recommender_cache.py" 73
+8:12 0 "zeeguu/core/content_recommender/__init__.py" 177
+8:13 0 "zeeguu/core/content_recommender/elastic_first_recommender.py" 179
+9:1 0.00343596 "zeeguu/api/api/teacher_dashboard/_permissions.py" 128
+9:2 0.00193122 "zeeguu/api/api/teacher_dashboard/_common_api_parameters.py" 126
+9:3 0.00128748 "zeeguu/api/api/teacher_dashboard/_only_teachers_decorator.py" 129
+9:4 0.00115126 "zeeguu/core/user_statistics/reading_sessions.py" 136
+9:5 0.00115126 "zeeguu/core/user_statistics/exercise_corectness.py" 137
+9:6 0.000965609 "zeeguu/api/api/teacher_dashboard/helpers.py" 132
+9:7 0.00082939 "zeeguu/core/user_statistics/exercise_sessions.py" 134
+9:8 0.000439122 "zeeguu/core/sql/teacher/teachers_for_cohort.py" 135
+9:9 0.00032187 "zeeguu/core/user_statistics/student_overview.py" 142
+9:10 0.00032187 "zeeguu/core/sql/learner/words.py" 145
+9:11 0.00032187 "zeeguu/core/sql/learner/exercises_history.py" 140
+9:12 0 "zeeguu/api/api/teacher_dashboard/general.py" 133
+9:13 0 "zeeguu/api/api/teacher_dashboard/cohorts.py" 131
+9:14 0 "zeeguu/api/api/teacher_dashboard/article_management.py" 130
+9:15 0 "zeeguu/api/api/teacher_dashboard/student.py" 138
+9:16 0 "zeeguu/api/api/teacher_dashboard/student_exercises.py" 139
+9:17 0 "zeeguu/api/api/teacher_dashboard/student_overviews.py" 141
+9:18 0 "zeeguu/api/api/teacher_dashboard/student_readings.py" 143
+9:19 0 "zeeguu/api/api/teacher_dashboard/student_words.py" 144
+10:1 0.00447314 "zeeguu/api/app.py" 1
+10:2 0.00283535 "zeeguu/core/emailer/zeeguu_mailer.py" 118
+10:3 0.00248523 "zeeguu/core/configuration/configuration.py" 150
+10:4 0.000387041 "zeeguu/core/emailer/password_reset.py" 116
+10:5 0 "dev.py" 0
+10:6 0 "zeeguu/api/__main__.py" 89
+10:7 0 "zeeguu/core/configuration/__init__.py" 176
+11:1 0.00210812 "zeeguu/core/elastic/settings.py" 67
+11:2 0.00197875 "zeeguu/core/model/difficulty_lingo_rank.py" 181
+11:3 0.00169353 "zeeguu/core/elastic/indexing.py" 68
+11:4 0.00128748 "zeeguu/core/content_retriever/article_downloader.py" 46
+11:5 0.00104979 "zeeguu/core/content_retriever/content_cleaner.py" 30
+11:6 0.00104979 "zeeguu/core/content_retriever/quality_filter.py" 50
+11:7 0.000727921 "zeeguu/core/content_retriever/unicode_normalization.py" 53
+11:8 0 "tools/cleanup_non_content_bits.py" 29
+11:9 0 "tools/feed_retrieval.py" 45
+11:10 0 "tools/find_broken_articles.py" 49
+11:11 0 "tools/flatten_unicode_characters.py" 52
+11:12 0 "tools/mysql_to_elastic.py" 66
+11:13 0 "tools/remove_unreferenced_articles.py" 78
+11:14 0 "zeeguu/core/content_retriever/video_dowloader.py" 182
+11:15 0 "zeeguu/core/test/test_lingorank_service.py" 231
+11:16 0 "zeeguu/core/test/test_retrieve_and_compute.py" 235
+12:1 0.00346691 "zeeguu/core/definition_of_learned/is_learned.py" 185
+12:2 0.0029427 "zeeguu/core/model/sorted_exercise_log.py" 174
+12:3 0 "zeeguu/core/definition_of_learned/__init__.py" 184
+13:1 0.00418431 "zeeguu/api/test/api_test_mixin.py" 152
+13:2 0 "zeeguu/api/test/test_architectural_conventions.py" 154
+13:3 0 "zeeguu/api/test/test_article.py" 155
+13:4 0 "zeeguu/api/test/test_bookmark.py" 156
+13:5 0 "zeeguu/api/test/test_session.py" 157
+13:6 0 "zeeguu/api/test/test_smartwatch_events.py" 158
+13:7 0 "zeeguu/api/test/test_system_settings.py" 159
+13:8 0 "zeeguu/api/test/test_teacher_dashboard.py" 160
+13:9 0 "zeeguu/api/test/test_translations.py" 161
+13:10 0 "zeeguu/api/test/test_user_article.py" 162
+13:11 0 "zeeguu/api/test/test_user_articles.py" 163
+13:12 0 "zeeguu/api/test/test_user_data.py" 164
+13:13 0 "zeeguu/api/test/test_user_languages.py" 165
+13:14 0 "zeeguu/api/test/test_user_login.py" 166
+14:1 0.00032187 "zeeguu/core/model/starred_article.py" 59
+14:2 0 "tools/migrate_starredarticle_2_userarticle.py" 58
+*Links directed
+#*Links path enterFlow exitFlow numEdges numChildren
+*Links root 0 0 61 14
+2 1 0.0496047
+2 3 0.0130347
+2 4 0.00706605
+2 7 0.00980137
+3 1 0.026854
+3 2 0.0241352
+3 6 0.0139156
+3 7 0.00852749
+3 10 0.000979928
+4 1 0.0185456
+4 2 0.0192246
+4 3 0.016903
+4 5 0.00089095
+4 6 0.0140106
+4 7 0.00128748
+4 8 0.0053457
+4 10 0.00089095
+4 11 0.00121282
+4 12 0.00064374
+5 1 0.0156629
+5 2 0.00702004
+5 3 0.0101927
+5 4 0.000424282
+5 6 0.00354613
+5 7 0.000534834
+5 8 0.00202156
+5 10 0.00236122
+6 1 0.026954
+6 2 0.0150692
+6 3 0.0063202
+6 7 0.00316168
+6 12 0.00262083
+8 1 0.0078105
+8 2 0.00809845
+8 3 0.0076885
+8 5 0.00032187
+8 6 0.00032187
+8 11 0.000376588
+9 1 0.00939633
+9 2 0.00204847
+9 3 0.0097695
+9 5 0.00418431
+9 6 0.000458664
+9 10 0.00032187
+10 1 0.00279931
+10 4 0.00127241
+10 5 0.00127241
+11 1 0.00561537
+11 2 0.0109852
+11 3 0.00128748
+11 4 0.00298101
+11 7 0.00032187
+11 8 0.00032187
+13 1 0.00249851
+13 3 0.00185477
+13 4 0.0015329
+13 10 0.00121104
+14 1 0.00107505
+14 2 0.000698457
+14 3 0.000698457
+14 7 0.000376588
+*Links 1 0.166816 0 1 2
+2 1 0.0152351
+*Links 1:1 0.163966 0 9 10
+1 2 0.139613
+3 1 0.00499281
+4 1 0.00447426
+5 1 0.00374279
+6 1 0.00168175
+7 1 0.00149837
+8 1 0.000663165
+9 1 0.00032187
+10 1 0.00032187
+*Links 1:2 0.0180858 0.0152351 1 2
+1 2 0.00735607
+*Links 2 0.0872796 0.0795069 41 21
+1 2 0.00522265
+1 3 0.00522265
+1 4 0.00522265
+1 5 0.00522265
+1 6 0.00522265
+1 7 0.00522265
+2 1 0.0206724
+3 1 0.00566039
+4 1 0.00258942
+5 1 0.00198931
+5 2 0.00198931
+6 9 0.00287378
+8 1 0.0010915
+8 2 0.0010915
+8 3 0.0010915
+9 2 0.0013185
+9 10 0.0013185
+10 2 0.00281054
+11 1 0.00130462
+12 5 0.00032187
+13 1 0.00032187
+13 2 0.00032187
+13 8 0.00032187
+14 2 0.00032187
+14 5 0.00032187
+15 1 0.00032187
+15 2 0.00032187
+15 8 0.00032187
+16 1 0.00032187
+16 2 0.00032187
+16 8 0.00032187
+17 1 0.00032187
+17 6 0.00032187
+18 1 0.00032187
+18 11 0.00032187
+19 5 0.00032187
+20 2 0.00032187
+20 3 0.00032187
+20 8 0.00032187
+21 2 0.00032187
+21 5 0.00032187
+*Links 3 0.0677494 0.0744121 57 29
+1 2 0.00281847
+1 3 0.00281847
+1 4 0.00281847
+1 6 0.00281847
+1 7 0.00281847
+1 8 0.00281847
+1 11 0.00281847
+1 12 0.00281847
+2 1 0.00231981
+2 10 0.00231981
+3 1 0.00315696
+3 5 0.00315696
+4 1 0.00169861
+4 6 0.00169861
+5 1 0.00306202
+5 3 0.00306202
+6 1 0.0016906
+6 4 0.0016906
+7 1 0.0022092
+7 5 0.0022092
+8 1 0.00171394
+9 1 0.00150677
+9 14 0.00150677
+10 1 0.00146556
+10 13 0.00146556
+11 1 0.00203517
+14 1 0.000979928
+14 4 0.000979928
+15 2 0.000446919
+15 14 0.000446919
+16 1 0.000368868
+16 3 0.000368868
+16 7 0.000368868
+16 8 0.000368868
+16 14 0.000368868
+17 4 0.00032187
+17 6 0.00032187
+18 2 0.00032187
+18 4 0.00032187
+19 1 0.00032187
+20 1 0.00032187
+21 1 0.00032187
+22 1 0.00032187
+23 4 0.00032187
+23 6 0.00032187
+24 1 0.00032187
+25 4 0.00032187
+26 1 0.00032187
+26 3 0.00032187
+26 5 0.00032187
+27 1 0.00032187
+27 2 0.00032187
+27 4 0.00032187
+27 6 0.00032187
+27 9 0.00032187
+28 1 0.00032187
+29 1 0.00032187
+*Links 4 0.0132767 0.0789555 148 55
+1 14 0.00089095
+1 15 0.00089095
+1 17 0.00089095
+1 22 0.00089095
+2 1 0.0131223
+3 2 0.0039553
+4 1 0.00679754
+5 1 0.00346815
+5 6 0.00346815
+7 2 0.00135609
+7 3 0.00135609
+7 11 0.00135609
+7 13 0.00135609
+8 1 0.00181681
+8 4 0.00181681
+9 2 0.00166133
+10 2 0.000725575
+10 3 0.000725575
+10 6 0.000725575
+10 9 0.000725575
+10 12 0.000725575
+11 2 0.000603791
+11 3 0.000603791
+11 10 0.000603791
+11 18 0.000603791
+11 19 0.000603791
+12 2 0.000570465
+12 3 0.000570465
+12 6 0.000570465
+12 9 0.000570465
+13 2 0.000746834
+13 16 0.000746834
+13 21 0.000746834
+16 2 0.000912864
+18 2 0.000675337
+18 3 0.000675337
+19 2 0.00053395
+19 3 0.00053395
+19 9 0.00053395
+19 10 0.00053395
+20 2 0.000509279
+20 3 0.000509279
+20 7 0.000509279
+21 2 0.000624669
+23 2 0.000634218
+23 14 0.000634218
+24 2 0.000390267
+24 10 0.000390267
+24 20 0.000390267
+25 2 0.000356068
+25 3 0.000356068
+25 7 0.000356068
+25 9 0.000356068
+25 10 0.000356068
+25 12 0.000356068
+26 2 0.000390267
+26 7 0.000390267
+26 20 0.000390267
+27 2 0.000413066
+27 15 0.000413066
+27 23 0.000413066
+28 5 0.00032187
+28 24 0.00032187
+29 5 0.00032187
+29 7 0.00032187
+29 26 0.00032187
+30 5 0.00032187
+30 7 0.00032187
+30 11 0.00032187
+30 19 0.00032187
+31 1 0.00032187
+31 5 0.00032187
+31 9 0.00032187
+32 5 0.00032187
+32 7 0.00032187
+32 11 0.00032187
+33 3 0.00032187
+33 5 0.00032187
+33 7 0.00032187
+33 10 0.00032187
+33 25 0.00032187
+34 3 0.00032187
+34 5 0.00032187
+34 7 0.00032187
+34 18 0.00032187
+35 3 0.00032187
+35 5 0.00032187
+35 18 0.00032187
+36 5 0.00032187
+36 7 0.00032187
+36 14 0.00032187
+36 15 0.00032187
+36 23 0.00032187
+36 27 0.00032187
+37 5 0.00032187
+37 7 0.00032187
+37 13 0.00032187
+37 16 0.00032187
+38 6 0.00032187
+39 3 0.00032187
+39 5 0.00032187
+39 7 0.00032187
+39 8 0.00032187
+40 3 0.00032187
+40 5 0.00032187
+40 7 0.00032187
+41 3 0.00032187
+41 5 0.00032187
+41 7 0.00032187
+42 3 0.00032187
+42 5 0.00032187
+42 7 0.00032187
+42 9 0.00032187
+42 10 0.00032187
+43 3 0.00032187
+43 5 0.00032187
+43 7 0.00032187
+44 5 0.00032187
+44 12 0.00032187
+45 5 0.00032187
+45 7 0.00032187
+45 9 0.00032187
+46 5 0.00032187
+46 8 0.00032187
+47 5 0.00032187
+47 20 0.00032187
+48 5 0.00032187
+48 7 0.00032187
+48 11 0.00032187
+48 13 0.00032187
+48 16 0.00032187
+48 19 0.00032187
+48 21 0.00032187
+49 3 0.00032187
+49 5 0.00032187
+49 6 0.00032187
+49 10 0.00032187
+50 1 0.00032187
+51 1 0.00032187
+51 4 0.00032187
+52 1 0.00032187
+52 4 0.00032187
+53 1 0.00032187
+53 4 0.00032187
+54 1 0.00032187
+54 4 0.00032187
+55 1 0.00032187
+55 4 0.00032187
+*Links 5 0.00666954 0.0417637 99 28
+1 2 0.000843394
+1 3 0.000843394
+1 5 0.000843394
+1 6 0.000843394
+1 7 0.000843394
+1 9 0.000843394
+1 10 0.000843394
+1 11 0.000843394
+1 12 0.000843394
+1 13 0.000843394
+1 14 0.000843394
+1 15 0.000843394
+1 16 0.000843394
+1 17 0.000843394
+1 18 0.000843394
+1 19 0.000843394
+1 20 0.000843394
+1 21 0.000843394
+1 22 0.000843394
+1 23 0.000843394
+1 24 0.000843394
+1 25 0.000843394
+2 4 0.0054531
+5 1 0.00109147
+5 2 0.00109147
+6 1 0.000867886
+6 2 0.000867886
+7 1 0.000496182
+7 2 0.000496182
+7 4 0.000496182
+7 5 0.000496182
+7 8 0.000496182
+9 1 0.000441351
+9 2 0.000441351
+9 3 0.000441351
+10 1 0.000465247
+10 2 0.000465247
+10 3 0.000465247
+10 5 0.000465247
+11 1 0.000424282
+11 2 0.000424282
+11 3 0.000424282
+11 5 0.000424282
+12 1 0.000401524
+12 2 0.000401524
+12 3 0.000401524
+12 5 0.000401524
+13 1 0.000501091
+13 2 0.000501091
+13 3 0.000501091
+14 1 0.000401524
+14 2 0.000401524
+14 3 0.000401524
+14 5 0.000401524
+15 1 0.000387041
+15 2 0.000387041
+15 4 0.000387041
+15 5 0.000387041
+15 7 0.000387041
+15 8 0.000387041
+16 1 0.000424282
+16 2 0.000424282
+16 3 0.000424282
+16 5 0.000424282
+16 27 0.000424282
+17 1 0.000465247
+17 2 0.000465247
+17 3 0.000465247
+18 1 0.000441351
+18 2 0.000441351
+18 3 0.000441351
+18 6 0.000441351
+19 1 0.000560832
+19 2 0.000560832
+20 1 0.000501091
+20 2 0.000501091
+20 3 0.000501091
+20 26 0.000501091
+21 1 0.000441351
+21 2 0.000441351
+21 5 0.000441351
+22 1 0.000393558
+22 2 0.000393558
+22 3 0.000393558
+23 1 0.00041148
+23 2 0.00041148
+23 3 0.00041148
+24 1 0.000424282
+24 2 0.000424282
+24 3 0.000424282
+24 5 0.000424282
+25 1 0.000401524
+25 2 0.000401524
+25 3 0.000401524
+25 5 0.000401524
+28 1 0.00032187
+28 2 0.00032187
+28 3 0.00032187
+28 5 0.00032187
+*Links 6 0.0322528 0.0541259 44 26
+1 2 0.00161331
+1 3 0.00161331
+1 4 0.00161331
+1 5 0.00161331
+1 6 0.00161331
+3 1 0.00148204
+3 2 0.00148204
+4 1 0.00154311
+4 2 0.00154311
+5 1 0.00135471
+7 2 0.000582767
+8 1 0.000579594
+9 1 0.000946565
+10 1 0.000413066
+10 2 0.000413066
+11 1 0.000413066
+11 9 0.000413066
+12 1 0.00032187
+12 2 0.00032187
+12 8 0.00032187
+13 3 0.00032187
+14 1 0.00032187
+14 3 0.00032187
+15 9 0.00032187
+15 10 0.00032187
+15 11 0.00032187
+16 1 0.00032187
+16 2 0.00032187
+16 3 0.00032187
+16 5 0.00032187
+16 7 0.00032187
+17 1 0.00032187
+17 3 0.00032187
+18 1 0.00032187
+18 5 0.00032187
+19 1 0.00032187
+20 3 0.00032187
+21 1 0.00032187
+21 3 0.00032187
+22 1 0.00032187
+23 1 0.00032187
+24 5 0.00032187
+25 5 0.00032187
+26 1 0.00032187
+*Links 7 0.0240113 0 1 2
+2 1 0.00165651
+*Links 7:1 0.0222056 0 1 2
+2 1 0.0131503
+*Links 7:2 0.00346221 0.00165651 1 2
+1 2 0.00165651
+*Links 8 0.00768913 0.0246178 20 13
+2 1 0.000994078
+5 1 0.000902882
+7 2 0.000376588
+7 3 0.000376588
+7 4 0.000376588
+7 5 0.000376588
+7 9 0.000376588
+8 2 0.000371613
+8 3 0.000371613
+8 4 0.000371613
+8 5 0.000371613
+8 6 0.000371613
+10 2 0.00032187
+10 3 0.00032187
+10 4 0.00032187
+11 6 0.00032187
+11 8 0.00032187
+12 7 0.00032187
+13 7 0.00032187
+13 8 0.00032187
+*Links 9 1.6263e-19 0.0261791 31 19
+2 1 0.000732254
+3 1 0.00141623
+6 4 0.000439122
+6 5 0.000439122
+6 7 0.000439122
+6 8 0.000439122
+9 4 0.000390267
+9 5 0.000390267
+9 7 0.000390267
+12 1 0.00032187
+12 3 0.00032187
+12 6 0.00032187
+13 1 0.00032187
+13 2 0.00032187
+13 3 0.00032187
+13 6 0.00032187
+14 1 0.00032187
+14 3 0.00032187
+15 1 0.00032187
+15 2 0.00032187
+15 3 0.00032187
+15 6 0.00032187
+16 2 0.00032187
+16 5 0.00032187
+16 11 0.00032187
+17 2 0.00032187
+17 9 0.00032187
+18 2 0.00032187
+18 4 0.00032187
+19 2 0.00032187
+19 10 0.00032187
+*Links 10 0.005765 0.00534413 6 7
+1 3 0.00127241
+2 1 0.0015269
+4 2 0.000650855
+5 1 0.00032187
+6 1 0.00032187
+7 3 0.00032187
+*Links 11 0.00158941 0.0215128 22 16
+3 1 0.000681745
+3 2 0.000681745
+4 1 0.000406051
+4 2 0.000406051
+4 3 0.000406051
+4 5 0.000406051
+4 6 0.000406051
+4 7 0.000406051
+8 5 0.00032187
+9 4 0.00032187
+10 6 0.00032187
+11 7 0.00032187
+12 1 0.00032187
+12 3 0.00032187
+13 3 0.00032187
+14 1 0.00032187
+14 3 0.00032187
+15 3 0.00032187
+15 4 0.00032187
+16 4 0.00032187
+16 5 0.00032187
+16 6 0.00032187
+*Links 12 0.00326457 0 2 3
+2 1 0.00282317
+3 1 0.00032187
+*Links 13 -7.58942e-19 0.00709723 13 14
+2 1 0.00032187
+3 1 0.00032187
+4 1 0.00032187
+5 1 0.00032187
+6 1 0.00032187
+7 1 0.00032187
+8 1 0.00032187
+9 1 0.00032187
+10 1 0.00032187
+11 1 0.00032187
+12 1 0.00032187
+13 1 0.00032187
+14 1 0.00032187
+*Links 14 0 0.00284855 1 2
+2 1 0.00032187

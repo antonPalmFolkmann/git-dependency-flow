@@ -30,7 +30,7 @@ def read_csv_file():
 def main():
     dg = read_csv_file()
 
-    im = Infomap(ftree=True)
+    im = Infomap(ftree=True, two_level=True)
 
     im.add_networkx_graph(dg)
 
