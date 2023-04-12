@@ -19,11 +19,9 @@ def read_csv_file():
 
             if not dg.has_node(importerFile):
                 dg.add_node(importerFile)
-                dg.add_edge(importerFile, importerFile)
 
             if not dg.has_node(importedFile):
                 dg.add_node(importedFile)
-                dg.add_edge(importedFile, importedFile)
 
             dg.add_edge(importerFile, importedFile)
         
@@ -42,7 +40,6 @@ def main():
     im = Infomap(
         ftree=True,
         two_level=True,
-        include_self_links=True,
         silent=True, 
         node_limit=1000000
     )
