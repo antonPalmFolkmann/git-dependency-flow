@@ -27,6 +27,7 @@ def read_csv_file():
             dg.add_edge(importerFile, importedFile)
         
         print("directed graph links: " + str(len(dg.edges)))
+        print("directed graph nodes: " + str(len(dg.nodes)))
         return dg
     
 
@@ -45,8 +46,8 @@ def main():
 
     im.run()        
 
-    print("Nodes: " + str(len(im.get_nodes())) + "<---------")
-    
+    for link in im.get_links():
+        print(link)
 
     im.write_flow_tree("flowmethod.ftree")
 
