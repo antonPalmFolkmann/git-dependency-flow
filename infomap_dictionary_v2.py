@@ -32,14 +32,18 @@ def read_csv_file():
 def main():
     dg = read_csv_file()
 
-    im = Infomap(ftree=True, no_infomap=True, include_self_links=True)
+    im = Infomap(
+        ftree=True, 
+        no_infomap=True, 
+        include_self_links=True, 
+        prefer_modular_solution=True, 
+        silent=True, 
+        node_limit=1000000
+    )
 
     im.add_networkx_graph(dg)
 
     im.run()
-
-    print(im.get_nodes)
-    print(im.get_links)
 
     im.write_flow_tree("flowmethod.ftree")
 
