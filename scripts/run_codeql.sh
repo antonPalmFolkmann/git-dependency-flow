@@ -4,7 +4,7 @@ cd /root/FlowMethod
 
 echo "Creating database..."
 cd target-repo
-codeql database create ../database/ --language=python
+codeql database create --language=python --quiet ../database/ 
 cd ..
 echo "Database created"
 
@@ -25,7 +25,7 @@ codeql query run --database=./database --output=git-dependency-flow/raw/function
 codeql query run --database=./database --output=git-dependency-flow/raw/modules.bqrs -- source-repo/codeql-custom-queries-python/modules.ql
 echo "Queries done"
 
-echo "Decoding query ouput"
+echo "Decoding query output"
 codeql bqrs decode --output=git-dependency-flow/data/classes.csv --format=csv -- git-dependency-flow/raw/classes.bqrs
 codeql bqrs decode --output=git-dependency-flow/data/constants.csv --format=csv -- git-dependency-flow/raw/constants.bqrs
 codeql bqrs decode --output=git-dependency-flow/data/edges.csv --format=csv -- git-dependency-flow/raw/edges.bqrs
