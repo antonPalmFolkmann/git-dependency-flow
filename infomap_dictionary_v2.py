@@ -46,8 +46,9 @@ def main():
     im.run()
     
     tmp = 0
-    for link in im.get_links:
+    for link in im.get_links():
         tmp + 1
+        
 
     print("Links: " + str(tmp) + "<---------")
     
