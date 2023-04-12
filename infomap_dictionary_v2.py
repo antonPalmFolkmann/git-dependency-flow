@@ -25,18 +25,16 @@ def read_csv_file():
 
             dg.add_edge(importerFile, importedFile)
         
-        print("directed graph links: " + str(len(dg.edges)))
-        print("directed graph nodes: " + str(len(dg.nodes)))
         return dg
     
 
 def main():
     dg = read_csv_file()
-    plt.figure(figsize=(128,128)) 
+    """ plt.figure(figsize=(128,128)) 
     nx.draw(dg, pos = nx.kamada_kawai_layout(dg), with_labels=True)
     plt.axis('equal') 
     plt.show()
-    plt.savefig("networkx.png")
+    plt.savefig("networkx.png") """
 
     im = Infomap(
         ftree=True,
@@ -47,13 +45,7 @@ def main():
 
     im.add_networkx_graph(dg)
 
-    im.run()        
-
-    tmp = 0
-    for link in im.get_links():
-        tmp += 1
-    
-    print(tmp)
+    im.run()
 
     im.write_flow_tree("flowmethod.ftree")
 
