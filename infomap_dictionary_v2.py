@@ -46,8 +46,11 @@ def main():
 
     im.run()        
 
+    tmp = 0
     for link in im.get_links():
+        tmp + 1
         print(link)
+        print(tmp)
 
     im.write_flow_tree("flowmethod.ftree")
 
