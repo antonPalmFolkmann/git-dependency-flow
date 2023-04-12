@@ -34,8 +34,7 @@ def main():
 
     im = Infomap(
         ftree=True,
-        include_self_links=True, 
-        fast_hierarchical_solution=True, 
+        include_self_links=True,
         silent=True, 
         node_limit=1000000
     )
