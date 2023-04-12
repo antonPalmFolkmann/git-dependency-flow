@@ -46,7 +46,7 @@ def main():
     im.run()
     
     tmp = 0
-    for link in im.get_links():
+    for link in im.get_nodes():
         tmp + 1
         
 
