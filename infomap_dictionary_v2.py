@@ -26,7 +26,7 @@ def read_csv_file():
 
             dg.add_edge(importerFile, importedFile)
         
-        print("directed graph links: " + len(dg.edges))
+        print("directed graph links: " + str(len(dg.edges)))
         return dg
     
 
