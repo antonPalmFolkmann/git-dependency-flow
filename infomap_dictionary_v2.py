@@ -45,8 +45,8 @@ def main():
 
     im.run()
 
-    print("Nodes: " + len(im.get_nodes) + "<---------")
-    print("Links: " + len(im.get_links) + "<---------")
+    print("Nodes: " + str(len(im.get_nodes)) + "<---------")
+    print("Links: " + str(len(im.get_links)) + "<---------")
 
     im.write_flow_tree("flowmethod.ftree")
 
