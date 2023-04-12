@@ -48,7 +48,7 @@ def main():
 
     tmp = 0
     for link in im.get_links():
-        tmp + 1
+        tmp += 1
         print(link)
         print(tmp)
 
