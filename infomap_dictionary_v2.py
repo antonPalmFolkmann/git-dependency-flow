@@ -1,6 +1,7 @@
 import csv
 import networkx as nx
 from infomap import Infomap
+import matplotlib.pyplot as plt
 
 
 def read_csv_file():
@@ -33,6 +34,8 @@ def read_csv_file():
 
 def main():
     dg = read_csv_file()
+    nx.draw(dg, with_labels=True,)
+    plt.savefig("networkx.png")
 
     im = Infomap(
         ftree=True,
@@ -49,8 +52,8 @@ def main():
     tmp = 0
     for link in im.get_links():
         tmp += 1
-        print(link)
-        print(tmp)
+    
+    print(tmp)
 
     im.write_flow_tree("flowmethod.ftree")
 
