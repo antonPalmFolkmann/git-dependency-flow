@@ -34,11 +34,10 @@ def read_csv_file():
 
 def main():
     dg = read_csv_file()
-    fig = plt.figure(figsize=(40, 40)) 
-    nx.draw(dg, with_labels=True)
+    nx.draw(dg, pos = nx.spectral_layout(dg), with_labels=True)
     plt.axis('equal') 
     plt.show()
-    fig.savefig("networkx.png")
+    plt.savefig("networkx.png")
 
     im = Infomap(
         ftree=True,
