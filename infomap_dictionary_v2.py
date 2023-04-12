@@ -32,8 +32,8 @@ def read_csv_file():
 
 def main():
     dg = read_csv_file()
+    plt.figure(figsize=(512,512)) 
     nx.draw(dg, pos = nx.kamada_kawai_layout(dg), with_labels=True)
-    plt.axis('equal') 
     plt.show()
     plt.savefig("networkx.png")
 
