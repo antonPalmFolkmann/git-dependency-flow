@@ -44,9 +44,13 @@ def main():
     im.add_networkx_graph(dg)
 
     im.run()
+    
+    tmp = 0
+    for link in im.get_links:
+        tmp + 1
 
-    print("Nodes: " + str(len(im.get_nodes)) + "<---------")
-    print("Links: " + str(len(im.get_links)) + "<---------")
+    print("Links: " + str(tmp) + "<---------")
+    
 
     im.write_flow_tree("flowmethod.ftree")
 
