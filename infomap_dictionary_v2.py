@@ -33,8 +33,7 @@ def main():
     dg = read_csv_file()
 
     im = Infomap(
-        ftree=True, 
-        no_infomap=True, 
+        ftree=True,
         include_self_links=True, 
         prefer_modular_solution=True, 
         silent=True, 
