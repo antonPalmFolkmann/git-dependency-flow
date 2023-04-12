@@ -30,13 +30,13 @@ def read_csv_file():
 def main():
     dg = read_csv_file()
 
-    im = Infomap(ftree=True, two_level=True)
+    im = Infomap(clu=True, clu_level=-1)
 
     im.add_networkx_graph(dg)
 
     im.run()
 
-    im.write_flow_tree("flowmethod.ftree")
+    im.write_clu("flowmethod.clu")
 
 
 if __name__ == "__main__":
