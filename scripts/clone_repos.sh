@@ -4,22 +4,17 @@ cd /root/FlowMethod
 
 echo "Cloning necessary git repositories..."
 
-if [ ! -d "./source-repo/" ]
-then
-    git clone -q https://github.com/github/vscode-codeql-starter.git source-repo
-fi
-
 if [ ! -d "./git-dependency-flow/" ]
 then
     git clone -q https://github.com/antonPalmFolkmann/git-dependency-flow.git
 fi
 
+echo "Installing packs..."
+cd git-dependency-flow/queries
+codeql pack install
+echo "Packs installed"
+
 echo "Cloned git repositories"
 
-read -p  "Input target GitHub repository URL: " target_repo_url
 
-if [ ! -d "./target-repo/" ]
-then
-    git clone -q $target_repo_url target-repo
-fi
 
