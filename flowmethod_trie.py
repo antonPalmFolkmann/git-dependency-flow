@@ -1,11 +1,5 @@
-# Create class TrieNode. Inputs are self and a string of the module name.
-# Set the module name as an attribute of the node.
-# Set the path to the file containing the module as an attribute of the node.
-# Set the children of the node as an attribute of the node.
-# Set the node as a leaf node as an attribute of the node.
 import csv
 from typing import List
-
 
 class TrieNode():
     def __init__(self, module: str):
@@ -13,14 +7,8 @@ class TrieNode():
         self.path = None
         self.children = {}
 
-# Create insert method of TrieNode. Inputs are self and a list of module 
-# components as strings and a string of the path to the file containing the module.
-# If the first module component is not in the children of the current node,
-# create a new node for it and add it to the children of the current node, and give the rest of the module components
-# as inputs in the new node.
-# If the first module component is in the children of the current node, give the rest of the module components
-# as inputs in the child node.
-# If the list of module components is empty, set the current node to be a leaf node and set the path to the file containing the module.
+    # Insert method of TrieNode.
+    # Traverses the trie by module components and assigns path to the last node.
     def insert(self, module_components: List[str], path: str):
         if module_components:
             if module_components[0] not in self.children:
@@ -29,11 +17,8 @@ class TrieNode():
         else:
             self.path = path
 
-# Create search method of TrieNode. Inputs are self and a list of module components as strings.
-# If the first module component is not in the children of the current node, return None.
-# If the first module component is in the children of the current node, give the rest of the module components
-# as inputs in the child node.
-# If the list of module components is empty, return the path as a string.
+    # Search method of TrieNode. 
+    # Traverses the trie by module components and returns the path of the last node.
     def search(self, module_components: List[str]):
         if module_components:
             if module_components[0] not in self.children:
@@ -46,16 +31,9 @@ class TrieNode():
                 else:
                     return None
             return self.path
-        
-# Create method print to print the trie.
-    def print(self, level=0):
-        print("  " * level, self.module)
-        for child in self.children.values():
-            child.print(level + 1)
 
-# Create class Trie. Import CSV file with module names and paths to files containing the modules from file "modules.csv"
-# with the first column containing the module names and the second column containing the paths.
-
+# Trie data structure for storing modules, classes, functions, constants, and assigns corresponding file paths as value.
+# Import data from constants.csv, modules.csv, functions.csv, and classes.csv and insert into the trie.
 class Trie():
     def importConstants(self):
         with open("data/constants.csv", "r") as csv_file:
@@ -105,7 +83,8 @@ class Trie():
         self.importClasses()
 
 
-# Run the Trie class and print the trie.
+# Map the imported module to the corresponding file path using the edges.csv file.
+# Write the new edges to new_edges.csv.
 if __name__ == "__main__":
     trie = Trie()
     edges = []
@@ -117,7 +96,6 @@ if __name__ == "__main__":
                 module_components = importedModule.split(".")
                 importedFile = trie.root.search(module_components)
                 if importedFile == None:
-                    print(module_components)
                     importedFile = "NONE"
                 edges.append(str(importerFile) + "," + ".".join(module_components) + "," + str(importedFile))
     with open("data/new_edges.csv", "w") as writer:
