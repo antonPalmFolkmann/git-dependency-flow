@@ -24,10 +24,11 @@ On M1 macs:
 docker run --rm -it --platform linux/amd64 antonfolkmann/flowmethod:latest bash
 ```
 
-Inside the docker container go to the scripts folder and execute the scripts with the following commands in sequence:
+Inside the docker container go to the scripts folder and execute following script:
 
 - `./scripts/flowmethod.sh
-    - Here, it is important to give your git username and a Git Authentication Token, as passwords don’t work for GitHub CLI.
+
+Here, it is important to give your git username and a Git Authentication Token, as passwords don’t work for GitHub CLI.
 
 The `flowtree` has now been created, and is ready for `mapequation.org/infomap`
 
