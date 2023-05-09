@@ -1,0 +1,636 @@
+importerFile,importedModule,importedFile,Internal/external,Mapped correctly?
+examples/celery/src/task_app/views.py,task_app.tasks,examples/celery/src/task_app/tasks.py,EXTERNAL,EXTERNAL
+examples/celery/src/task_app/__init__.py,task_app.views,examples/celery/src/task_app/views.py,EXTERNAL,EXTERNAL
+examples/javascript/js_example/views.py,js_example.app,examples/javascript/js_example/__init__.py,EXTERNAL,EXTERNAL
+examples/javascript/tests/conftest.py,js_example.app,examples/javascript/js_example/__init__.py,EXTERNAL,EXTERNAL
+examples/javascript/js_example/__init__.py,js_example.views,examples/javascript/js_example/views.py,EXTERNAL,EXTERNAL
+examples/tutorial/flaskr/__init__.py,flaskr.auth,examples/tutorial/flaskr/auth.py,INTERNAL,MAPPED
+examples/tutorial/flaskr/blog.py,flaskr.auth.login_required,examples/tutorial/flaskr/auth.py,INTERNAL,MAPPED
+examples/tutorial/flaskr/__init__.py,flaskr.blog,examples/tutorial/flaskr/blog.py,INTERNAL,MAPPED
+examples/tutorial/flaskr/__init__.py,flaskr.db,examples/tutorial/flaskr/db.py,INTERNAL,MAPPED
+examples/tutorial/flaskr/auth.py,flaskr.db.get_db,examples/tutorial/flaskr/db.py,INTERNAL,MAPPED
+examples/tutorial/flaskr/blog.py,flaskr.db.get_db,examples/tutorial/flaskr/db.py,INTERNAL,MAPPED
+examples/tutorial/tests/conftest.py,flaskr.db.get_db,examples/tutorial/flaskr/db.py,INTERNAL,MAPPED
+examples/tutorial/tests/test_auth.py,flaskr.db.get_db,examples/tutorial/flaskr/db.py,INTERNAL,MAPPED
+examples/tutorial/tests/test_blog.py,flaskr.db.get_db,examples/tutorial/flaskr/db.py,INTERNAL,MAPPED
+examples/tutorial/tests/test_db.py,flaskr.db.get_db,examples/tutorial/flaskr/db.py,INTERNAL,MAPPED
+examples/tutorial/tests/conftest.py,flaskr.db.init_db,examples/tutorial/flaskr/db.py,INTERNAL,MAPPED
+src/flask/app.py,__future__.annotations,NONE,EXTERNAL,EXTERNAL
+src/flask/blueprints.py,__future__.annotations,NONE,EXTERNAL,EXTERNAL
+src/flask/cli.py,__future__.annotations,NONE,EXTERNAL,EXTERNAL
+src/flask/config.py,__future__.annotations,NONE,EXTERNAL,EXTERNAL
+src/flask/ctx.py,__future__.annotations,NONE,EXTERNAL,EXTERNAL
+src/flask/debughelpers.py,__future__.annotations,NONE,EXTERNAL,EXTERNAL
+src/flask/globals.py,__future__.annotations,NONE,EXTERNAL,EXTERNAL
+src/flask/helpers.py,__future__.annotations,NONE,EXTERNAL,EXTERNAL
+src/flask/json/__init__.py,__future__.annotations,NONE,EXTERNAL,EXTERNAL
+src/flask/json/provider.py,__future__.annotations,NONE,EXTERNAL,EXTERNAL
+src/flask/json/tag.py,__future__.annotations,NONE,EXTERNAL,EXTERNAL
+src/flask/logging.py,__future__.annotations,NONE,EXTERNAL,EXTERNAL
+src/flask/scaffold.py,__future__.annotations,NONE,EXTERNAL,EXTERNAL
+src/flask/sessions.py,__future__.annotations,NONE,EXTERNAL,EXTERNAL
+src/flask/signals.py,__future__.annotations,NONE,EXTERNAL,EXTERNAL
+src/flask/templating.py,__future__.annotations,NONE,EXTERNAL,EXTERNAL
+src/flask/testing.py,__future__.annotations,NONE,EXTERNAL,EXTERNAL
+src/flask/typing.py,__future__.annotations,NONE,EXTERNAL,EXTERNAL
+src/flask/views.py,__future__.annotations,NONE,EXTERNAL,EXTERNAL
+src/flask/wrappers.py,__future__.annotations,NONE,EXTERNAL,EXTERNAL
+tests/typing/typing_app_decorators.py,__future__.annotations,NONE,EXTERNAL,EXTERNAL
+tests/typing/typing_error_handler.py,__future__.annotations,NONE,EXTERNAL,EXTERNAL
+tests/typing/typing_route.py,__future__.annotations,NONE,EXTERNAL,EXTERNAL
+tests/conftest.py,_pytest.monkeypatch,NONE,EXTERNAL,EXTERNAL
+tests/test_cli.py,_pytest.monkeypatch.notset,NONE,EXTERNAL,EXTERNAL
+src/flask/typing.py,_typeshed.wsgi.WSGIApplication,NONE,EXTERNAL,EXTERNAL
+src/flask/app.py,asgiref.sync.async_to_sync,NONE,EXTERNAL,EXTERNAL
+src/flask/cli.py,ast,NONE,EXTERNAL,EXTERNAL
+tests/test_async.py,asyncio,NONE,EXTERNAL,EXTERNAL
+src/flask/json/tag.py,base64.b64decode,NONE,EXTERNAL,EXTERNAL
+src/flask/json/tag.py,base64.b64encode,NONE,EXTERNAL,EXTERNAL
+src/flask/signals.py,blinker.Namespace,NONE,EXTERNAL,EXTERNAL
+examples/celery/src/task_app/__init__.py,celery.Celery,NONE,EXTERNAL,EXTERNAL
+examples/celery/src/task_app/views.py,celery.result.AsyncResult,NONE,EXTERNAL,EXTERNAL
+examples/celery/src/task_app/tasks.py,celery.shared_task,NONE,EXTERNAL,EXTERNAL
+examples/celery/src/task_app/__init__.py,celery.Task,NONE,EXTERNAL,EXTERNAL
+examples/celery/src/task_app/tasks.py,celery.Task,NONE,EXTERNAL,EXTERNAL
+examples/tutorial/flaskr/db.py,click,NONE,EXTERNAL,EXTERNAL
+src/flask/app.py,click,NONE,EXTERNAL,EXTERNAL
+src/flask/cli.py,click,NONE,EXTERNAL,EXTERNAL
+tests/test_cli.py,click,NONE,EXTERNAL,EXTERNAL
+tests/test_testing.py,click,NONE,EXTERNAL,EXTERNAL
+src/flask/cli.py,click.core.ParameterSource,NONE,EXTERNAL,EXTERNAL
+src/flask/testing.py,click.testing.CliRunner,NONE,EXTERNAL,EXTERNAL
+tests/test_cli.py,click.testing.CliRunner,NONE,EXTERNAL,EXTERNAL
+src/flask/cli.py,code,NONE,EXTERNAL,EXTERNAL
+tests/test_json.py,codecs,NONE,EXTERNAL,EXTERNAL
+src/flask/app.py,collections.abc.Iterator,NONE,EXTERNAL,EXTERNAL
+src/flask/sessions.py,collections.abc.MutableMapping,NONE,EXTERNAL,EXTERNAL
+src/flask/blueprints.py,collections.defaultdict,NONE,EXTERNAL,EXTERNAL
+src/flask/scaffold.py,collections.defaultdict,NONE,EXTERNAL,EXTERNAL
+tests/test_instance_config.py,config_module_app.app,NONE,EXTERNAL,EXTERNAL
+tests/test_instance_config.py,config_package_app.app,NONE,EXTERNAL,EXTERNAL
+src/flask/testing.py,contextlib.contextmanager,NONE,EXTERNAL,EXTERNAL
+src/flask/testing.py,contextlib.ExitStack,NONE,EXTERNAL,EXTERNAL
+src/flask/ctx.py,contextvars,NONE,EXTERNAL,EXTERNAL
+src/flask/globals.py,contextvars.ContextVar,NONE,EXTERNAL,EXTERNAL
+src/flask/testing.py,copy.copy,NONE,EXTERNAL,EXTERNAL
+src/flask/cli.py,cryptography,NONE,EXTERNAL,EXTERNAL
+src/flask/json/provider.py,dataclasses,NONE,EXTERNAL,EXTERNAL
+tests/test_basic.py,dataclasses.make_dataclass,NONE,EXTERNAL,EXTERNAL
+tests/test_json.py,datetime,NONE,EXTERNAL,EXTERNAL
+src/flask/json/provider.py,datetime.date,NONE,EXTERNAL,EXTERNAL
+src/flask/helpers.py,datetime.datetime,NONE,EXTERNAL,EXTERNAL
+src/flask/json/tag.py,datetime.datetime,NONE,EXTERNAL,EXTERNAL
+src/flask/sessions.py,datetime.datetime,NONE,EXTERNAL,EXTERNAL
+tests/test_basic.py,datetime.datetime,NONE,EXTERNAL,EXTERNAL
+tests/test_json_tag.py,datetime.datetime,NONE,EXTERNAL,EXTERNAL
+src/flask/app.py,datetime.timedelta,NONE,EXTERNAL,EXTERNAL
+src/flask/scaffold.py,datetime.timedelta,NONE,EXTERNAL,EXTERNAL
+src/flask/sessions.py,datetime.timezone,NONE,EXTERNAL,EXTERNAL
+tests/test_basic.py,datetime.timezone,NONE,EXTERNAL,EXTERNAL
+tests/test_json_tag.py,datetime.timezone,NONE,EXTERNAL,EXTERNAL
+src/flask/json/provider.py,decimal,NONE,EXTERNAL,EXTERNAL
+tests/test_json.py,decimal,NONE,EXTERNAL,EXTERNAL
+docs/conf.py,docutils.nodes.reference,NONE,EXTERNAL,EXTERNAL
+docs/conf.py,docutils.parsers.rst.roles.set_classes,NONE,EXTERNAL,EXTERNAL
+src/flask/cli.py,dotenv,NONE,EXTERNAL,EXTERNAL
+tests/test_cli.py,dotenv,NONE,EXTERNAL,EXTERNAL
+src/flask/config.py,errno,NONE,EXTERNAL,EXTERNAL
+src/flask/__init__.py,flask.app.Request,NONE,INTERNAL,NOT MAPPED
+src/flask/__init__.py,flask.app.Response,NONE,INTERNAL,NOT MAPPED
+examples/tutorial/flaskr/db.py,flask.current_app,NONE,INTERNAL,NOT MAPPED
+tests/test_cli.py,flask.current_app,NONE,INTERNAL,NOT MAPPED
+examples/tutorial/flaskr/auth.py,flask.flash,NONE,INTERNAL,NOT MAPPED
+examples/tutorial/flaskr/blog.py,flask.flash,NONE,INTERNAL,NOT MAPPED
+examples/tutorial/flaskr/auth.py,flask.g,NONE,INTERNAL,NOT MAPPED
+examples/tutorial/flaskr/blog.py,flask.g,NONE,INTERNAL,NOT MAPPED
+examples/tutorial/flaskr/db.py,flask.g,NONE,INTERNAL,NOT MAPPED
+examples/tutorial/tests/test_auth.py,flask.g,NONE,INTERNAL,NOT MAPPED
+src/flask/app.py,flask.globals._cv_app,NONE,INTERNAL,NOT MAPPED
+src/flask/ctx.py,flask.globals._cv_app,NONE,INTERNAL,NOT MAPPED
+src/flask/templating.py,flask.globals._cv_app,NONE,INTERNAL,NOT MAPPED
+src/flask/app.py,flask.globals._cv_request,NONE,INTERNAL,NOT MAPPED
+src/flask/ctx.py,flask.globals._cv_request,NONE,INTERNAL,NOT MAPPED
+src/flask/helpers.py,flask.globals._cv_request,NONE,INTERNAL,NOT MAPPED
+src/flask/templating.py,flask.globals._cv_request,NONE,INTERNAL,NOT MAPPED
+tests/test_testing.py,flask.globals._cv_request,NONE,INTERNAL,NOT MAPPED
+tests/test_appctx.py,flask.globals.app_ctx,NONE,INTERNAL,NOT MAPPED
+src/flask/__init__.py,flask.globals.current_app,NONE,INTERNAL,NOT MAPPED
+src/flask/cli.py,flask.globals.current_app,NONE,INTERNAL,NOT MAPPED
+src/flask/helpers.py,flask.globals.current_app,NONE,INTERNAL,NOT MAPPED
+src/flask/json/__init__.py,flask.globals.current_app,NONE,INTERNAL,NOT MAPPED
+src/flask/scaffold.py,flask.globals.current_app,NONE,INTERNAL,NOT MAPPED
+src/flask/templating.py,flask.globals.current_app,NONE,INTERNAL,NOT MAPPED
+src/flask/views.py,flask.globals.current_app,NONE,INTERNAL,NOT MAPPED
+src/flask/wrappers.py,flask.globals.current_app,NONE,INTERNAL,NOT MAPPED
+src/flask/__init__.py,flask.globals.g,NONE,INTERNAL,NOT MAPPED
+src/flask/app.py,flask.globals.g,NONE,INTERNAL,NOT MAPPED
+src/flask/__init__.py,flask.globals.request,NONE,INTERNAL,NOT MAPPED
+src/flask/app.py,flask.globals.request,NONE,INTERNAL,NOT MAPPED
+src/flask/helpers.py,flask.globals.request,NONE,INTERNAL,NOT MAPPED
+src/flask/logging.py,flask.globals.request,NONE,INTERNAL,NOT MAPPED
+src/flask/templating.py,flask.globals.request,NONE,INTERNAL,NOT MAPPED
+src/flask/views.py,flask.globals.request,NONE,INTERNAL,NOT MAPPED
+src/flask/app.py,flask.globals.request_ctx,NONE,INTERNAL,NOT MAPPED
+src/flask/debughelpers.py,flask.globals.request_ctx,NONE,INTERNAL,NOT MAPPED
+src/flask/helpers.py,flask.globals.request_ctx,NONE,INTERNAL,NOT MAPPED
+tests/conftest.py,flask.globals.request_ctx,NONE,INTERNAL,NOT MAPPED
+tests/test_appctx.py,flask.globals.request_ctx,NONE,INTERNAL,NOT MAPPED
+tests/test_reqctx.py,flask.globals.request_ctx,NONE,INTERNAL,NOT MAPPED
+tests/test_session_interface.py,flask.globals.request_ctx,NONE,INTERNAL,NOT MAPPED
+src/flask/__init__.py,flask.globals.session,NONE,INTERNAL,NOT MAPPED
+src/flask/app.py,flask.globals.session,NONE,INTERNAL,NOT MAPPED
+src/flask/helpers.py,flask.globals.session,NONE,INTERNAL,NOT MAPPED
+src/flask/json/tag.py,flask.json.dumps,NONE,INTERNAL,NOT MAPPED
+src/flask/__init__.py,flask.json.jsonify,NONE,INTERNAL,NOT MAPPED
+tests/test_testing.py,flask.json.jsonify,NONE,INTERNAL,NOT MAPPED
+src/flask/json/tag.py,flask.json.loads,NONE,INTERNAL,NOT MAPPED
+examples/javascript/js_example/views.py,flask.jsonify,NONE,INTERNAL,NOT MAPPED
+tests/typing/typing_route.py,flask.jsonify,NONE,INTERNAL,NOT MAPPED
+tests/test_apps/subdomaintestmodule/__init__.py,flask.Module,NONE,INTERNAL,NOT MAPPED
+examples/tutorial/flaskr/auth.py,flask.redirect,NONE,INTERNAL,NOT MAPPED
+examples/tutorial/flaskr/blog.py,flask.redirect,NONE,INTERNAL,NOT MAPPED
+examples/celery/src/task_app/__init__.py,flask.render_template,NONE,INTERNAL,NOT MAPPED
+examples/javascript/js_example/views.py,flask.render_template,NONE,INTERNAL,NOT MAPPED
+examples/tutorial/flaskr/auth.py,flask.render_template,NONE,INTERNAL,NOT MAPPED
+examples/tutorial/flaskr/blog.py,flask.render_template,NONE,INTERNAL,NOT MAPPED
+tests/test_apps/blueprintapp/apps/admin/__init__.py,flask.render_template,NONE,INTERNAL,NOT MAPPED
+tests/test_apps/blueprintapp/apps/frontend/__init__.py,flask.render_template,NONE,INTERNAL,NOT MAPPED
+examples/tutorial/flaskr/auth.py,flask.session,NONE,INTERNAL,NOT MAPPED
+examples/tutorial/tests/test_auth.py,flask.session,NONE,INTERNAL,NOT MAPPED
+tests/test_converters.py,flask.session,NONE,INTERNAL,NOT MAPPED
+tests/typing/typing_route.py,flask.stream_template,NONE,INTERNAL,NOT MAPPED
+examples/tutorial/flaskr/auth.py,flask.url_for,NONE,INTERNAL,NOT MAPPED
+examples/tutorial/flaskr/blog.py,flask.url_for,NONE,INTERNAL,NOT MAPPED
+tests/test_converters.py,flask.url_for,NONE,INTERNAL,NOT MAPPED
+examples/tutorial/tests/conftest.py,flaskr.create_app,NONE,INTERNAL,NOT MAPPED
+examples/tutorial/tests/test_factory.py,flaskr.create_app,NONE,INTERNAL,NOT MAPPED
+examples/tutorial/flaskr/auth.py,functools,NONE,EXTERNAL,EXTERNAL
+src/flask/helpers.py,functools.lru_cache,NONE,EXTERNAL,EXTERNAL
+tests/test_cli.py,functools.partial,NONE,EXTERNAL,EXTERNAL
+src/flask/blueprints.py,functools.update_wrapper,NONE,EXTERNAL,EXTERNAL
+src/flask/cli.py,functools.update_wrapper,NONE,EXTERNAL,EXTERNAL
+src/flask/ctx.py,functools.update_wrapper,NONE,EXTERNAL,EXTERNAL
+src/flask/helpers.py,functools.update_wrapper,NONE,EXTERNAL,EXTERNAL
+src/flask/scaffold.py,functools.update_wrapper,NONE,EXTERNAL,EXTERNAL
+tests/test_basic.py,gc,NONE,EXTERNAL,EXTERNAL
+tests/test_reqctx.py,greenlet.greenlet,NONE,EXTERNAL,EXTERNAL
+src/flask/sessions.py,hashlib,NONE,EXTERNAL,EXTERNAL
+tests/test_apps/helloworld/wsgi.py,hello.app,NONE,EXTERNAL,EXTERNAL
+tests/typing/typing_error_handler.py,http.HTTPStatus,NONE,EXTERNAL,EXTERNAL
+tests/typing/typing_route.py,http.HTTPStatus,NONE,EXTERNAL,EXTERNAL
+src/flask/cli.py,importlib,NONE,EXTERNAL,EXTERNAL
+src/flask/cli.py,importlib_metadata,NONE,EXTERNAL,EXTERNAL
+src/flask/cli.py,importlib.metadata,NONE,EXTERNAL,EXTERNAL
+src/flask/scaffold.py,importlib.util,NONE,EXTERNAL,EXTERNAL
+src/flask/cli.py,inspect,NONE,EXTERNAL,EXTERNAL
+src/flask/app.py,inspect.iscoroutinefunction,NONE,EXTERNAL,EXTERNAL
+tests/test_instance_config.py,installed_package.app,NONE,EXTERNAL,EXTERNAL
+tests/test_helpers.py,io,NONE,EXTERNAL,EXTERNAL
+tests/test_json.py,io,NONE,EXTERNAL,EXTERNAL
+tests/test_logging.py,io.StringIO,NONE,EXTERNAL,EXTERNAL
+tests/test_subclassing.py,io.StringIO,NONE,EXTERNAL,EXTERNAL
+src/flask/app.py,itertools.chain,NONE,EXTERNAL,EXTERNAL
+src/flask/sessions.py,itsdangerous.BadSignature,NONE,EXTERNAL,EXTERNAL
+src/flask/sessions.py,itsdangerous.URLSafeTimedSerializer,NONE,EXTERNAL,EXTERNAL
+src/flask/templating.py,jinja2.BaseLoader,NONE,EXTERNAL,EXTERNAL
+tests/test_templating.py,jinja2.DictLoader,NONE,EXTERNAL,EXTERNAL
+src/flask/templating.py,jinja2.Environment,NONE,EXTERNAL,EXTERNAL
+src/flask/scaffold.py,jinja2.FileSystemLoader,NONE,EXTERNAL,EXTERNAL
+src/flask/templating.py,jinja2.Template,NONE,EXTERNAL,EXTERNAL
+src/flask/templating.py,jinja2.TemplateNotFound,NONE,EXTERNAL,EXTERNAL
+tests/test_blueprints.py,jinja2.TemplateNotFound,NONE,EXTERNAL,EXTERNAL
+tests/test_templating.py,jinja2.TemplateNotFound,NONE,EXTERNAL,EXTERNAL
+src/flask/config.py,json,NONE,EXTERNAL,EXTERNAL
+src/flask/json/__init__.py,json,NONE,EXTERNAL,EXTERNAL
+src/flask/json/provider.py,json,NONE,EXTERNAL,EXTERNAL
+tests/test_config.py,json,NONE,EXTERNAL,EXTERNAL
+src/flask/app.py,logging,NONE,EXTERNAL,EXTERNAL
+src/flask/logging.py,logging,NONE,EXTERNAL,EXTERNAL
+tests/test_logging.py,logging,NONE,EXTERNAL,EXTERNAL
+tests/test_templating.py,logging,NONE,EXTERNAL,EXTERNAL
+src/flask/__init__.py,markupsafe.escape,NONE,EXTERNAL,EXTERNAL
+src/flask/__init__.py,markupsafe.Markup,NONE,EXTERNAL,EXTERNAL
+src/flask/json/tag.py,markupsafe.Markup,NONE,EXTERNAL,EXTERNAL
+tests/test_basic.py,markupsafe.Markup,NONE,EXTERNAL,EXTERNAL
+tests/test_json_tag.py,markupsafe.Markup,NONE,EXTERNAL,EXTERNAL
+tests/test_templating.py,markupsafe.Markup,NONE,EXTERNAL,EXTERNAL
+tests/test_instance_config.py,namespace.package2.app,NONE,EXTERNAL,EXTERNAL
+src/flask/cli.py,operator.itemgetter,NONE,EXTERNAL,EXTERNAL
+examples/tutorial/flaskr/__init__.py,os,NONE,EXTERNAL,EXTERNAL
+examples/tutorial/tests/conftest.py,os,NONE,EXTERNAL,EXTERNAL
+src/flask/app.py,os,NONE,EXTERNAL,EXTERNAL
+src/flask/blueprints.py,os,NONE,EXTERNAL,EXTERNAL
+src/flask/cli.py,os,NONE,EXTERNAL,EXTERNAL
+src/flask/config.py,os,NONE,EXTERNAL,EXTERNAL
+src/flask/helpers.py,os,NONE,EXTERNAL,EXTERNAL
+src/flask/scaffold.py,os,NONE,EXTERNAL,EXTERNAL
+tests/conftest.py,os,NONE,EXTERNAL,EXTERNAL
+tests/test_cli.py,os,NONE,EXTERNAL,EXTERNAL
+tests/test_config.py,os,NONE,EXTERNAL,EXTERNAL
+tests/test_helpers.py,os,NONE,EXTERNAL,EXTERNAL
+docs/conf.py,packaging.version,NONE,EXTERNAL,EXTERNAL
+docs/conf.py,pallets_sphinx_themes.get_version,NONE,EXTERNAL,EXTERNAL
+docs/conf.py,pallets_sphinx_themes.ProjectLink,NONE,EXTERNAL,EXTERNAL
+src/flask/scaffold.py,pathlib,NONE,EXTERNAL,EXTERNAL
+tests/test_basic.py,pathlib.Path,NONE,EXTERNAL,EXTERNAL
+tests/test_cli.py,pathlib.Path,NONE,EXTERNAL,EXTERNAL
+src/flask/helpers.py,pkgutil,NONE,EXTERNAL,EXTERNAL
+src/flask/scaffold.py,pkgutil,NONE,EXTERNAL,EXTERNAL
+tests/conftest.py,pkgutil,NONE,EXTERNAL,EXTERNAL
+src/flask/cli.py,platform,NONE,EXTERNAL,EXTERNAL
+tests/test_basic.py,platform.python_implementation,NONE,EXTERNAL,EXTERNAL
+tests/test_cli.py,platform.python_version,NONE,EXTERNAL,EXTERNAL
+examples/javascript/tests/conftest.py,pytest,NONE,EXTERNAL,EXTERNAL
+examples/javascript/tests/test_js_example.py,pytest,NONE,EXTERNAL,EXTERNAL
+examples/tutorial/tests/conftest.py,pytest,NONE,EXTERNAL,EXTERNAL
+examples/tutorial/tests/test_auth.py,pytest,NONE,EXTERNAL,EXTERNAL
+examples/tutorial/tests/test_blog.py,pytest,NONE,EXTERNAL,EXTERNAL
+examples/tutorial/tests/test_db.py,pytest,NONE,EXTERNAL,EXTERNAL
+tests/conftest.py,pytest,NONE,EXTERNAL,EXTERNAL
+tests/test_appctx.py,pytest,NONE,EXTERNAL,EXTERNAL
+tests/test_async.py,pytest,NONE,EXTERNAL,EXTERNAL
+tests/test_basic.py,pytest,NONE,EXTERNAL,EXTERNAL
+tests/test_blueprints.py,pytest,NONE,EXTERNAL,EXTERNAL
+tests/test_cli.py,pytest,NONE,EXTERNAL,EXTERNAL
+tests/test_config.py,pytest,NONE,EXTERNAL,EXTERNAL
+tests/test_helpers.py,pytest,NONE,EXTERNAL,EXTERNAL
+tests/test_instance_config.py,pytest,NONE,EXTERNAL,EXTERNAL
+tests/test_json.py,pytest,NONE,EXTERNAL,EXTERNAL
+tests/test_json_tag.py,pytest,NONE,EXTERNAL,EXTERNAL
+tests/test_logging.py,pytest,NONE,EXTERNAL,EXTERNAL
+tests/test_reqctx.py,pytest,NONE,EXTERNAL,EXTERNAL
+tests/test_templating.py,pytest,NONE,EXTERNAL,EXTERNAL
+tests/test_testing.py,pytest,NONE,EXTERNAL,EXTERNAL
+tests/test_user_error_handler.py,pytest,NONE,EXTERNAL,EXTERNAL
+tests/test_views.py,pytest,NONE,EXTERNAL,EXTERNAL
+src/flask/cli.py,re,NONE,EXTERNAL,EXTERNAL
+tests/test_basic.py,re,NONE,EXTERNAL,EXTERNAL
+src/flask/cli.py,readline,NONE,EXTERNAL,EXTERNAL
+src/flask/cli.py,rlcompleter.Completer,NONE,EXTERNAL,EXTERNAL
+tests/test_instance_config.py,site_app.app,NONE,EXTERNAL,EXTERNAL
+tests/test_instance_config.py,site_egg,NONE,EXTERNAL,EXTERNAL
+tests/test_instance_config.py,site_package,NONE,EXTERNAL,EXTERNAL
+src/flask/helpers.py,socket,NONE,EXTERNAL,EXTERNAL
+examples/tutorial/flaskr/db.py,sqlite3,NONE,EXTERNAL,EXTERNAL
+examples/tutorial/tests/test_db.py,sqlite3,NONE,EXTERNAL,EXTERNAL
+src/flask/cli.py,ssl,NONE,EXTERNAL,EXTERNAL
+tests/test_cli.py,ssl,NONE,EXTERNAL,EXTERNAL
+tests/conftest.py,subprocess,NONE,EXTERNAL,EXTERNAL
+src/flask/app.py,sys,NONE,EXTERNAL,EXTERNAL
+src/flask/cli.py,sys,NONE,EXTERNAL,EXTERNAL
+src/flask/ctx.py,sys,NONE,EXTERNAL,EXTERNAL
+src/flask/helpers.py,sys,NONE,EXTERNAL,EXTERNAL
+src/flask/logging.py,sys,NONE,EXTERNAL,EXTERNAL
+src/flask/scaffold.py,sys,NONE,EXTERNAL,EXTERNAL
+tests/conftest.py,sys,NONE,EXTERNAL,EXTERNAL
+tests/test_cli.py,sys,NONE,EXTERNAL,EXTERNAL
+tests/test_instance_config.py,sys,NONE,EXTERNAL,EXTERNAL
+tests/test_logging.py,sys,NONE,EXTERNAL,EXTERNAL
+examples/celery/make_celery.py,task_app.create_app,NONE,EXTERNAL,EXTERNAL
+examples/tutorial/tests/conftest.py,tempfile,NONE,EXTERNAL,EXTERNAL
+tests/conftest.py,textwrap,NONE,EXTERNAL,EXTERNAL
+tests/test_config.py,textwrap,NONE,EXTERNAL,EXTERNAL
+src/flask/helpers.py,threading.RLock,NONE,EXTERNAL,EXTERNAL
+examples/celery/src/task_app/tasks.py,time,NONE,EXTERNAL,EXTERNAL
+src/flask/cli.py,traceback,NONE,EXTERNAL,EXTERNAL
+src/flask/config.py,types,NONE,EXTERNAL,EXTERNAL
+tests/test_cli.py,types,NONE,EXTERNAL,EXTERNAL
+src/flask/app.py,types.TracebackType,NONE,EXTERNAL,EXTERNAL
+src/flask/ctx.py,types.TracebackType,NONE,EXTERNAL,EXTERNAL
+src/flask/testing.py,types.TracebackType,NONE,EXTERNAL,EXTERNAL
+src/flask/app.py,urllib.parse.quote,NONE,EXTERNAL,EXTERNAL
+src/flask/testing.py,urllib.parse.urlsplit,NONE,EXTERNAL,EXTERNAL
+src/flask/json/provider.py,uuid,NONE,EXTERNAL,EXTERNAL
+tests/test_basic.py,uuid,NONE,EXTERNAL,EXTERNAL
+tests/test_json.py,uuid,NONE,EXTERNAL,EXTERNAL
+src/flask/json/tag.py,uuid.UUID,NONE,EXTERNAL,EXTERNAL
+tests/test_json_tag.py,uuid.uuid4,NONE,EXTERNAL,EXTERNAL
+src/flask/__init__.py,warnings,NONE,EXTERNAL,EXTERNAL
+src/flask/app.py,warnings,NONE,EXTERNAL,EXTERNAL
+src/flask/globals.py,warnings,NONE,EXTERNAL,EXTERNAL
+src/flask/helpers.py,warnings,NONE,EXTERNAL,EXTERNAL
+src/flask/signals.py,warnings,NONE,EXTERNAL,EXTERNAL
+tests/test_basic.py,warnings,NONE,EXTERNAL,EXTERNAL
+tests/test_reqctx.py,warnings,NONE,EXTERNAL,EXTERNAL
+src/flask/app.py,weakref,NONE,EXTERNAL,EXTERNAL
+src/flask/json/provider.py,weakref,NONE,EXTERNAL,EXTERNAL
+tests/test_basic.py,weakref,NONE,EXTERNAL,EXTERNAL
+src/flask/cli.py,werkzeug,NONE,EXTERNAL,EXTERNAL
+tests/test_testing.py,werkzeug,NONE,EXTERNAL,EXTERNAL
+tests/test_cli.py,werkzeug.__version__,NONE,EXTERNAL,EXTERNAL
+src/flask/sessions.py,werkzeug.datastructures.CallbackDict,NONE,EXTERNAL,EXTERNAL
+src/flask/app.py,werkzeug.datastructures.Headers,NONE,EXTERNAL,EXTERNAL
+src/flask/typing.py,werkzeug.datastructures.Headers,NONE,EXTERNAL,EXTERNAL
+src/flask/app.py,werkzeug.datastructures.ImmutableDict,NONE,EXTERNAL,EXTERNAL
+tests/test_helpers.py,werkzeug.exceptions,NONE,EXTERNAL,EXTERNAL
+examples/tutorial/flaskr/blog.py,werkzeug.exceptions.abort,NONE,EXTERNAL,EXTERNAL
+src/flask/helpers.py,werkzeug.exceptions.abort,NONE,EXTERNAL,EXTERNAL
+src/flask/app.py,werkzeug.exceptions.Aborter,NONE,EXTERNAL,EXTERNAL
+src/flask/app.py,werkzeug.exceptions.BadRequest,NONE,EXTERNAL,EXTERNAL
+src/flask/wrappers.py,werkzeug.exceptions.BadRequest,NONE,EXTERNAL,EXTERNAL
+tests/test_basic.py,werkzeug.exceptions.BadRequest,NONE,EXTERNAL,EXTERNAL
+tests/typing/typing_error_handler.py,werkzeug.exceptions.BadRequest,NONE,EXTERNAL,EXTERNAL
+src/flask/app.py,werkzeug.exceptions.BadRequestKeyError,NONE,EXTERNAL,EXTERNAL
+src/flask/scaffold.py,werkzeug.exceptions.default_exceptions,NONE,EXTERNAL,EXTERNAL
+tests/test_basic.py,werkzeug.exceptions.Forbidden,NONE,EXTERNAL,EXTERNAL
+tests/test_user_error_handler.py,werkzeug.exceptions.Forbidden,NONE,EXTERNAL,EXTERNAL
+src/flask/app.py,werkzeug.exceptions.HTTPException,NONE,EXTERNAL,EXTERNAL
+src/flask/ctx.py,werkzeug.exceptions.HTTPException,NONE,EXTERNAL,EXTERNAL
+src/flask/scaffold.py,werkzeug.exceptions.HTTPException,NONE,EXTERNAL,EXTERNAL
+tests/test_user_error_handler.py,werkzeug.exceptions.HTTPException,NONE,EXTERNAL,EXTERNAL
+src/flask/app.py,werkzeug.exceptions.InternalServerError,NONE,EXTERNAL,EXTERNAL
+tests/test_user_error_handler.py,werkzeug.exceptions.InternalServerError,NONE,EXTERNAL,EXTERNAL
+tests/test_basic.py,werkzeug.exceptions.NotFound,NONE,EXTERNAL,EXTERNAL
+tests/test_user_error_handler.py,werkzeug.exceptions.NotFound,NONE,EXTERNAL,EXTERNAL
+tests/typing/typing_error_handler.py,werkzeug.exceptions.NotFound,NONE,EXTERNAL,EXTERNAL
+src/flask/json/provider.py,werkzeug.http.http_date,NONE,EXTERNAL,EXTERNAL
+src/flask/json/tag.py,werkzeug.http.http_date,NONE,EXTERNAL,EXTERNAL
+tests/test_json.py,werkzeug.http.http_date,NONE,EXTERNAL,EXTERNAL
+tests/test_blueprints.py,werkzeug.http.parse_cache_control_header,NONE,EXTERNAL,EXTERNAL
+src/flask/json/tag.py,werkzeug.http.parse_date,NONE,EXTERNAL,EXTERNAL
+tests/test_basic.py,werkzeug.http.parse_date,NONE,EXTERNAL,EXTERNAL
+tests/test_views.py,werkzeug.http.parse_set_header,NONE,EXTERNAL,EXTERNAL
+src/flask/globals.py,werkzeug.local.LocalProxy,NONE,EXTERNAL,EXTERNAL
+src/flask/logging.py,werkzeug.local.LocalProxy,NONE,EXTERNAL,EXTERNAL
+tests/test_converters.py,werkzeug.routing.BaseConverter,NONE,EXTERNAL,EXTERNAL
+src/flask/app.py,werkzeug.routing.BuildError,NONE,EXTERNAL,EXTERNAL
+tests/test_basic.py,werkzeug.routing.BuildError,NONE,EXTERNAL,EXTERNAL
+src/flask/app.py,werkzeug.routing.Map,NONE,EXTERNAL,EXTERNAL
+src/flask/app.py,werkzeug.routing.MapAdapter,NONE,EXTERNAL,EXTERNAL
+src/flask/app.py,werkzeug.routing.RequestRedirect,NONE,EXTERNAL,EXTERNAL
+tests/test_basic.py,werkzeug.routing.RequestRedirect,NONE,EXTERNAL,EXTERNAL
+src/flask/app.py,werkzeug.routing.RoutingException,NONE,EXTERNAL,EXTERNAL
+src/flask/app.py,werkzeug.routing.Rule,NONE,EXTERNAL,EXTERNAL
+src/flask/wrappers.py,werkzeug.routing.Rule,NONE,EXTERNAL,EXTERNAL
+tests/test_basic.py,werkzeug.routing.Rule,NONE,EXTERNAL,EXTERNAL
+tests/test_blueprints.py,werkzeug.routing.Rule,NONE,EXTERNAL,EXTERNAL
+tests/test_basic.py,werkzeug.routing.Submount,NONE,EXTERNAL,EXTERNAL
+src/flask/cli.py,werkzeug.run_simple,NONE,EXTERNAL,EXTERNAL
+examples/tutorial/flaskr/auth.py,werkzeug.security.check_password_hash,NONE,EXTERNAL,EXTERNAL
+examples/tutorial/flaskr/auth.py,werkzeug.security.generate_password_hash,NONE,EXTERNAL,EXTERNAL
+tests/test_basic.py,werkzeug.serving,NONE,EXTERNAL,EXTERNAL
+tests/test_templating.py,werkzeug.serving,NONE,EXTERNAL,EXTERNAL
+src/flask/app.py,werkzeug.serving.is_running_from_reloader,NONE,EXTERNAL,EXTERNAL
+src/flask/cli.py,werkzeug.serving.is_running_from_reloader,NONE,EXTERNAL,EXTERNAL
+src/flask/app.py,werkzeug.serving.run_simple,NONE,EXTERNAL,EXTERNAL
+src/flask/testing.py,werkzeug.test,NONE,EXTERNAL,EXTERNAL
+src/flask/testing.py,werkzeug.test.Client,NONE,EXTERNAL,EXTERNAL
+src/flask/testing.py,werkzeug.test.TestResponse,NONE,EXTERNAL,EXTERNAL
+src/flask/helpers.py,werkzeug.utils,NONE,EXTERNAL,EXTERNAL
+src/flask/app.py,werkzeug.utils.cached_property,NONE,EXTERNAL,EXTERNAL
+src/flask/scaffold.py,werkzeug.utils.cached_property,NONE,EXTERNAL,EXTERNAL
+src/flask/cli.py,werkzeug.utils.import_string,NONE,EXTERNAL,EXTERNAL
+src/flask/config.py,werkzeug.utils.import_string,NONE,EXTERNAL,EXTERNAL
+src/flask/app.py,werkzeug.utils.redirect,NONE,EXTERNAL,EXTERNAL
+src/flask/helpers.py,werkzeug.utils.redirect,NONE,EXTERNAL,EXTERNAL
+src/flask/testing.py,werkzeug.wrappers.Request,NONE,EXTERNAL,EXTERNAL
+src/flask/wrappers.py,werkzeug.wrappers.Request,NONE,EXTERNAL,EXTERNAL
+src/flask/app.py,werkzeug.wrappers.Response,NONE,EXTERNAL,EXTERNAL
+src/flask/helpers.py,werkzeug.wrappers.Response,NONE,EXTERNAL,EXTERNAL
+src/flask/typing.py,werkzeug.wrappers.Response,NONE,EXTERNAL,EXTERNAL
+src/flask/wrappers.py,werkzeug.wrappers.Response,NONE,EXTERNAL,EXTERNAL
+tests/test_appctx.py,flask,src/flask/__init__.py,INTERNAL,MAPPED
+tests/test_basic.py,flask,src/flask/__init__.py,INTERNAL,MAPPED
+tests/test_blueprints.py,flask,src/flask/__init__.py,INTERNAL,MAPPED
+tests/test_config.py,flask,src/flask/__init__.py,INTERNAL,MAPPED
+tests/test_helpers.py,flask,src/flask/__init__.py,INTERNAL,MAPPED
+tests/test_instance_config.py,flask,src/flask/__init__.py,INTERNAL,MAPPED
+tests/test_json.py,flask,src/flask/__init__.py,INTERNAL,MAPPED
+tests/test_regression.py,flask,src/flask/__init__.py,INTERNAL,MAPPED
+tests/test_reqctx.py,flask,src/flask/__init__.py,INTERNAL,MAPPED
+tests/test_session_interface.py,flask,src/flask/__init__.py,INTERNAL,MAPPED
+tests/test_signals.py,flask,src/flask/__init__.py,INTERNAL,MAPPED
+tests/test_subclassing.py,flask,src/flask/__init__.py,INTERNAL,MAPPED
+tests/test_templating.py,flask,src/flask/__init__.py,INTERNAL,MAPPED
+tests/test_testing.py,flask,src/flask/__init__.py,INTERNAL,MAPPED
+tests/test_user_error_handler.py,flask,src/flask/__init__.py,INTERNAL,MAPPED
+src/flask/cli.py,flask.__version__,src/flask/__init__.py,INTERNAL,MAPPED
+tests/test_cli.py,flask.__version__,src/flask/__init__.py,INTERNAL,MAPPED
+src/flask/__init__.py,flask.app.Flask,src/flask/app.py,INTERNAL,MAPPED
+src/flask/blueprints.py,flask.app.Flask,src/flask/app.py,INTERNAL,MAPPED
+src/flask/cli.py,flask.app.Flask,src/flask/app.py,INTERNAL,MAPPED
+src/flask/ctx.py,flask.app.Flask,src/flask/app.py,INTERNAL,MAPPED
+src/flask/debughelpers.py,flask.app.Flask,src/flask/app.py,INTERNAL,MAPPED
+src/flask/globals.py,flask.app.Flask,src/flask/app.py,INTERNAL,MAPPED
+src/flask/json/provider.py,flask.app.Flask,src/flask/app.py,INTERNAL,MAPPED
+src/flask/logging.py,flask.app.Flask,src/flask/app.py,INTERNAL,MAPPED
+src/flask/sessions.py,flask.app.Flask,src/flask/app.py,INTERNAL,MAPPED
+src/flask/templating.py,flask.app.Flask,src/flask/app.py,INTERNAL,MAPPED
+src/flask/testing.py,flask.app.Flask,src/flask/app.py,INTERNAL,MAPPED
+examples/celery/src/task_app/__init__.py,flask.Flask,src/flask/app.py,INTERNAL,MAPPED
+examples/javascript/js_example/__init__.py,flask.Flask,src/flask/app.py,INTERNAL,MAPPED
+examples/tutorial/flaskr/__init__.py,flask.Flask,src/flask/app.py,INTERNAL,MAPPED
+src/flask/cli.py,flask.Flask,src/flask/app.py,INTERNAL,MAPPED
+tests/conftest.py,flask.Flask,src/flask/app.py,INTERNAL,MAPPED
+tests/test_apps/blueprintapp/__init__.py,flask.Flask,src/flask/app.py,INTERNAL,MAPPED
+tests/test_apps/cliapp/app.py,flask.Flask,src/flask/app.py,INTERNAL,MAPPED
+tests/test_apps/cliapp/factory.py,flask.Flask,src/flask/app.py,INTERNAL,MAPPED
+tests/test_apps/cliapp/importerrorapp.py,flask.Flask,src/flask/app.py,INTERNAL,MAPPED
+tests/test_apps/cliapp/inner1/__init__.py,flask.Flask,src/flask/app.py,INTERNAL,MAPPED
+tests/test_apps/cliapp/inner1/inner2/flask.py,flask.Flask,src/flask/app.py,INTERNAL,MAPPED
+tests/test_apps/cliapp/multiapp.py,flask.Flask,src/flask/app.py,INTERNAL,MAPPED
+tests/test_apps/helloworld/hello.py,flask.Flask,src/flask/app.py,INTERNAL,MAPPED
+tests/test_async.py,flask.Flask,src/flask/app.py,INTERNAL,MAPPED
+tests/test_cli.py,flask.Flask,src/flask/app.py,INTERNAL,MAPPED
+tests/typing/typing_app_decorators.py,flask.Flask,src/flask/app.py,INTERNAL,MAPPED
+tests/typing/typing_error_handler.py,flask.Flask,src/flask/app.py,INTERNAL,MAPPED
+tests/typing/typing_route.py,flask.Flask,src/flask/app.py,INTERNAL,MAPPED
+examples/celery/src/task_app/views.py,flask.Blueprint,src/flask/blueprints.py,INTERNAL,MAPPED
+examples/tutorial/flaskr/auth.py,flask.Blueprint,src/flask/blueprints.py,INTERNAL,MAPPED
+examples/tutorial/flaskr/blog.py,flask.Blueprint,src/flask/blueprints.py,INTERNAL,MAPPED
+tests/test_apps/blueprintapp/apps/admin/__init__.py,flask.Blueprint,src/flask/blueprints.py,INTERNAL,MAPPED
+tests/test_apps/blueprintapp/apps/frontend/__init__.py,flask.Blueprint,src/flask/blueprints.py,INTERNAL,MAPPED
+tests/test_async.py,flask.Blueprint,src/flask/blueprints.py,INTERNAL,MAPPED
+tests/test_cli.py,flask.Blueprint,src/flask/blueprints.py,INTERNAL,MAPPED
+src/flask/__init__.py,flask.blueprints.Blueprint,src/flask/blueprints.py,INTERNAL,MAPPED
+src/flask/app.py,flask.blueprints.Blueprint,src/flask/blueprints.py,INTERNAL,MAPPED
+src/flask/debughelpers.py,flask.blueprints.Blueprint,src/flask/blueprints.py,INTERNAL,MAPPED
+src/flask/app.py,flask.cli,src/flask/cli.py,INTERNAL,MAPPED
+src/flask/scaffold.py,flask.cli.AppGroup,src/flask/cli.py,INTERNAL,MAPPED
+tests/test_cli.py,flask.cli.AppGroup,src/flask/cli.py,INTERNAL,MAPPED
+tests/test_cli.py,flask.cli.cli,src/flask/cli.py,INTERNAL,MAPPED
+tests/test_cli.py,flask.cli.find_best_app,src/flask/cli.py,INTERNAL,MAPPED
+tests/test_cli.py,flask.cli.FlaskGroup,src/flask/cli.py,INTERNAL,MAPPED
+tests/test_cli.py,flask.cli.get_version,src/flask/cli.py,INTERNAL,MAPPED
+tests/test_cli.py,flask.cli.load_dotenv,src/flask/cli.py,INTERNAL,MAPPED
+tests/test_cli.py,flask.cli.locate_app,src/flask/cli.py,INTERNAL,MAPPED
+src/flask/__main__.py,flask.cli.main,src/flask/cli.py,INTERNAL,MAPPED
+tests/test_cli.py,flask.cli.NoAppException,src/flask/cli.py,INTERNAL,MAPPED
+tests/test_cli.py,flask.cli.prepare_import,src/flask/cli.py,INTERNAL,MAPPED
+tests/test_cli.py,flask.cli.run_command,src/flask/cli.py,INTERNAL,MAPPED
+src/flask/testing.py,flask.cli.ScriptInfo,src/flask/cli.py,INTERNAL,MAPPED
+tests/test_cli.py,flask.cli.ScriptInfo,src/flask/cli.py,INTERNAL,MAPPED
+tests/test_testing.py,flask.cli.ScriptInfo,src/flask/cli.py,INTERNAL,MAPPED
+tests/test_cli.py,flask.cli.with_appcontext,src/flask/cli.py,INTERNAL,MAPPED
+src/flask/__init__.py,flask.config.Config,src/flask/config.py,INTERNAL,MAPPED
+src/flask/app.py,flask.config.Config,src/flask/config.py,INTERNAL,MAPPED
+src/flask/app.py,flask.config.ConfigAttribute,src/flask/config.py,INTERNAL,MAPPED
+src/flask/app.py,flask.ctx._AppCtxGlobals,src/flask/ctx.py,INTERNAL,MAPPED
+src/flask/globals.py,flask.ctx._AppCtxGlobals,src/flask/ctx.py,INTERNAL,MAPPED
+src/flask/__init__.py,flask.ctx.after_this_request,src/flask/ctx.py,INTERNAL,MAPPED
+src/flask/app.py,flask.ctx.AppContext,src/flask/ctx.py,INTERNAL,MAPPED
+src/flask/globals.py,flask.ctx.AppContext,src/flask/ctx.py,INTERNAL,MAPPED
+src/flask/__init__.py,flask.ctx.copy_current_request_context,src/flask/ctx.py,INTERNAL,MAPPED
+src/flask/__init__.py,flask.ctx.has_app_context,src/flask/ctx.py,INTERNAL,MAPPED
+src/flask/__init__.py,flask.ctx.has_request_context,src/flask/ctx.py,INTERNAL,MAPPED
+src/flask/app.py,flask.ctx.RequestContext,src/flask/ctx.py,INTERNAL,MAPPED
+src/flask/globals.py,flask.ctx.RequestContext,src/flask/ctx.py,INTERNAL,MAPPED
+src/flask/wrappers.py,flask.debughelpers.attach_enctype_error_multidict,src/flask/debughelpers.py,INTERNAL,MAPPED
+tests/test_basic.py,flask.debughelpers.DebugFilesKeyError,src/flask/debughelpers.py,INTERNAL,MAPPED
+src/flask/templating.py,flask.debughelpers.explain_template_loading_attempts,src/flask/debughelpers.py,INTERNAL,MAPPED
+src/flask/app.py,flask.debughelpers.FormDataRoutingRedirect,src/flask/debughelpers.py,INTERNAL,MAPPED
+src/flask/__init__.py,flask.globals.__app_ctx_stack,src/flask/globals.py,INTERNAL,MAPPED
+src/flask/__init__.py,flask.globals.__request_ctx_stack,src/flask/globals.py,INTERNAL,MAPPED
+src/flask/app.py,flask.helpers._split_blueprint_path,src/flask/helpers.py,INTERNAL,MAPPED
+src/flask/wrappers.py,flask.helpers._split_blueprint_path,src/flask/helpers.py,INTERNAL,MAPPED
+src/flask/__init__.py,flask.helpers.abort,src/flask/helpers.py,INTERNAL,MAPPED
+src/flask/__init__.py,flask.helpers.flash,src/flask/helpers.py,INTERNAL,MAPPED
+src/flask/app.py,flask.helpers.get_debug_flag,src/flask/helpers.py,INTERNAL,MAPPED
+src/flask/cli.py,flask.helpers.get_debug_flag,src/flask/helpers.py,INTERNAL,MAPPED
+tests/test_helpers.py,flask.helpers.get_debug_flag,src/flask/helpers.py,INTERNAL,MAPPED
+src/flask/__init__.py,flask.helpers.get_flashed_messages,src/flask/helpers.py,INTERNAL,MAPPED
+src/flask/app.py,flask.helpers.get_flashed_messages,src/flask/helpers.py,INTERNAL,MAPPED
+src/flask/app.py,flask.helpers.get_load_dotenv,src/flask/helpers.py,INTERNAL,MAPPED
+src/flask/cli.py,flask.helpers.get_load_dotenv,src/flask/helpers.py,INTERNAL,MAPPED
+src/flask/scaffold.py,flask.helpers.get_root_path,src/flask/helpers.py,INTERNAL,MAPPED
+src/flask/__init__.py,flask.helpers.get_template_attribute,src/flask/helpers.py,INTERNAL,MAPPED
+src/flask/__init__.py,flask.helpers.make_response,src/flask/helpers.py,INTERNAL,MAPPED
+src/flask/__init__.py,flask.helpers.redirect,src/flask/helpers.py,INTERNAL,MAPPED
+src/flask/__init__.py,flask.helpers.send_file,src/flask/helpers.py,INTERNAL,MAPPED
+src/flask/__init__.py,flask.helpers.send_from_directory,src/flask/helpers.py,INTERNAL,MAPPED
+src/flask/scaffold.py,flask.helpers.send_from_directory,src/flask/helpers.py,INTERNAL,MAPPED
+src/flask/__init__.py,flask.helpers.stream_with_context,src/flask/helpers.py,INTERNAL,MAPPED
+src/flask/templating.py,flask.helpers.stream_with_context,src/flask/helpers.py,INTERNAL,MAPPED
+src/flask/__init__.py,flask.helpers.url_for,src/flask/helpers.py,INTERNAL,MAPPED
+src/flask/__init__.py,flask.json,src/flask/json/__init__.py,INTERNAL,MAPPED
+src/flask/wrappers.py,flask.json,src/flask/json/__init__.py,INTERNAL,MAPPED
+tests/test_json.py,flask.json,src/flask/json/__init__.py,INTERNAL,MAPPED
+src/flask/json/__init__.py,flask.json.provider._default,src/flask/json/provider.py,INTERNAL,MAPPED
+src/flask/app.py,flask.json.provider.DefaultJSONProvider,src/flask/json/provider.py,INTERNAL,MAPPED
+tests/test_json.py,flask.json.provider.DefaultJSONProvider,src/flask/json/provider.py,INTERNAL,MAPPED
+src/flask/app.py,flask.json.provider.JSONProvider,src/flask/json/provider.py,INTERNAL,MAPPED
+tests/test_json_tag.py,flask.json.tag.JSONTag,src/flask/json/tag.py,INTERNAL,MAPPED
+src/flask/sessions.py,flask.json.tag.TaggedJSONSerializer,src/flask/json/tag.py,INTERNAL,MAPPED
+tests/test_json_tag.py,flask.json.tag.TaggedJSONSerializer,src/flask/json/tag.py,INTERNAL,MAPPED
+src/flask/app.py,flask.logging.create_logger,src/flask/logging.py,INTERNAL,MAPPED
+tests/test_logging.py,flask.logging.default_handler,src/flask/logging.py,INTERNAL,MAPPED
+tests/test_logging.py,flask.logging.has_level_handler,src/flask/logging.py,INTERNAL,MAPPED
+tests/test_logging.py,flask.logging.wsgi_errors_stream,src/flask/logging.py,INTERNAL,MAPPED
+src/flask/app.py,flask.scaffold._endpoint_from_view_func,src/flask/scaffold.py,INTERNAL,MAPPED
+src/flask/blueprints.py,flask.scaffold._endpoint_from_view_func,src/flask/scaffold.py,INTERNAL,MAPPED
+src/flask/app.py,flask.scaffold._sentinel,src/flask/scaffold.py,INTERNAL,MAPPED
+src/flask/blueprints.py,flask.scaffold._sentinel,src/flask/scaffold.py,INTERNAL,MAPPED
+src/flask/app.py,flask.scaffold.find_package,src/flask/scaffold.py,INTERNAL,MAPPED
+src/flask/app.py,flask.scaffold.Scaffold,src/flask/scaffold.py,INTERNAL,MAPPED
+src/flask/blueprints.py,flask.scaffold.Scaffold,src/flask/scaffold.py,INTERNAL,MAPPED
+src/flask/templating.py,flask.scaffold.Scaffold,src/flask/scaffold.py,INTERNAL,MAPPED
+src/flask/app.py,flask.scaffold.setupmethod,src/flask/scaffold.py,INTERNAL,MAPPED
+src/flask/blueprints.py,flask.scaffold.setupmethod,src/flask/scaffold.py,INTERNAL,MAPPED
+src/flask/app.py,flask.sessions.SecureCookieSessionInterface,src/flask/sessions.py,INTERNAL,MAPPED
+tests/test_reqctx.py,flask.sessions.SecureCookieSessionInterface,src/flask/sessions.py,INTERNAL,MAPPED
+src/flask/app.py,flask.sessions.SessionInterface,src/flask/sessions.py,INTERNAL,MAPPED
+tests/test_reqctx.py,flask.sessions.SessionInterface,src/flask/sessions.py,INTERNAL,MAPPED
+tests/test_session_interface.py,flask.sessions.SessionInterface,src/flask/sessions.py,INTERNAL,MAPPED
+src/flask/ctx.py,flask.sessions.SessionMixin,src/flask/sessions.py,INTERNAL,MAPPED
+src/flask/globals.py,flask.sessions.SessionMixin,src/flask/sessions.py,INTERNAL,MAPPED
+src/flask/testing.py,flask.sessions.SessionMixin,src/flask/sessions.py,INTERNAL,MAPPED
+tests/test_testing.py,flask.appcontext_popped,src/flask/signals.py,INTERNAL,MAPPED
+src/flask/__init__.py,flask.signals.appcontext_popped,src/flask/signals.py,INTERNAL,MAPPED
+src/flask/ctx.py,flask.signals.appcontext_popped,src/flask/signals.py,INTERNAL,MAPPED
+src/flask/__init__.py,flask.signals.appcontext_pushed,src/flask/signals.py,INTERNAL,MAPPED
+src/flask/ctx.py,flask.signals.appcontext_pushed,src/flask/signals.py,INTERNAL,MAPPED
+src/flask/__init__.py,flask.signals.appcontext_tearing_down,src/flask/signals.py,INTERNAL,MAPPED
+src/flask/app.py,flask.signals.appcontext_tearing_down,src/flask/signals.py,INTERNAL,MAPPED
+src/flask/__init__.py,flask.signals.before_render_template,src/flask/signals.py,INTERNAL,MAPPED
+src/flask/templating.py,flask.signals.before_render_template,src/flask/signals.py,INTERNAL,MAPPED
+src/flask/__init__.py,flask.signals.got_request_exception,src/flask/signals.py,INTERNAL,MAPPED
+src/flask/app.py,flask.signals.got_request_exception,src/flask/signals.py,INTERNAL,MAPPED
+src/flask/__init__.py,flask.signals.message_flashed,src/flask/signals.py,INTERNAL,MAPPED
+src/flask/helpers.py,flask.signals.message_flashed,src/flask/signals.py,INTERNAL,MAPPED
+src/flask/__init__.py,flask.signals.request_finished,src/flask/signals.py,INTERNAL,MAPPED
+src/flask/app.py,flask.signals.request_finished,src/flask/signals.py,INTERNAL,MAPPED
+src/flask/__init__.py,flask.signals.request_started,src/flask/signals.py,INTERNAL,MAPPED
+src/flask/app.py,flask.signals.request_started,src/flask/signals.py,INTERNAL,MAPPED
+src/flask/__init__.py,flask.signals.request_tearing_down,src/flask/signals.py,INTERNAL,MAPPED
+src/flask/app.py,flask.signals.request_tearing_down,src/flask/signals.py,INTERNAL,MAPPED
+src/flask/__init__.py,flask.signals.template_rendered,src/flask/signals.py,INTERNAL,MAPPED
+src/flask/templating.py,flask.signals.template_rendered,src/flask/signals.py,INTERNAL,MAPPED
+examples/javascript/tests/test_js_example.py,flask.template_rendered,src/flask/signals.py,INTERNAL,MAPPED
+src/flask/scaffold.py,flask.templating._default_template_ctx_processor,src/flask/templating.py,INTERNAL,MAPPED
+src/flask/app.py,flask.templating.DispatchingJinjaLoader,src/flask/templating.py,INTERNAL,MAPPED
+src/flask/app.py,flask.templating.Environment,src/flask/templating.py,INTERNAL,MAPPED
+src/flask/__init__.py,flask.templating.render_template,src/flask/templating.py,INTERNAL,MAPPED
+tests/typing/typing_route.py,flask.templating.render_template,src/flask/templating.py,INTERNAL,MAPPED
+src/flask/__init__.py,flask.templating.render_template_string,src/flask/templating.py,INTERNAL,MAPPED
+src/flask/__init__.py,flask.templating.stream_template,src/flask/templating.py,INTERNAL,MAPPED
+src/flask/__init__.py,flask.templating.stream_template_string,src/flask/templating.py,INTERNAL,MAPPED
+examples/celery/src/task_app/views.py,flask.request,src/flask/testing.py,INTERNAL,MAPPED
+examples/javascript/js_example/views.py,flask.request,src/flask/testing.py,INTERNAL,MAPPED
+examples/tutorial/flaskr/auth.py,flask.request,src/flask/testing.py,INTERNAL,MAPPED
+examples/tutorial/flaskr/blog.py,flask.request,src/flask/testing.py,INTERNAL,MAPPED
+tests/test_async.py,flask.request,src/flask/testing.py,INTERNAL,MAPPED
+tests/test_converters.py,flask.request,src/flask/testing.py,INTERNAL,MAPPED
+src/flask/app.py,flask.testing.EnvironBuilder,src/flask/testing.py,INTERNAL,MAPPED
+tests/test_reqctx.py,flask.testing.EnvironBuilder,src/flask/testing.py,INTERNAL,MAPPED
+tests/test_testing.py,flask.testing.EnvironBuilder,src/flask/testing.py,INTERNAL,MAPPED
+src/flask/app.py,flask.testing.FlaskClient,src/flask/testing.py,INTERNAL,MAPPED
+src/flask/app.py,flask.testing.FlaskCliRunner,src/flask/testing.py,INTERNAL,MAPPED
+tests/test_testing.py,flask.testing.FlaskCliRunner,src/flask/testing.py,INTERNAL,MAPPED
+src/flask/app.py,flask.typing,src/flask/typing.py,INTERNAL,MAPPED
+src/flask/blueprints.py,flask.typing,src/flask/typing.py,INTERNAL,MAPPED
+src/flask/ctx.py,flask.typing,src/flask/typing.py,INTERNAL,MAPPED
+src/flask/scaffold.py,flask.typing,src/flask/typing.py,INTERNAL,MAPPED
+src/flask/views.py,flask.typing,src/flask/typing.py,INTERNAL,MAPPED
+src/flask/app.py,typing,src/flask/typing.py,EXTERNAL,EXTERNAL
+src/flask/blueprints.py,typing,src/flask/typing.py,EXTERNAL,EXTERNAL
+src/flask/cli.py,typing,src/flask/typing.py,EXTERNAL,EXTERNAL
+src/flask/config.py,typing,src/flask/typing.py,EXTERNAL,EXTERNAL
+src/flask/ctx.py,typing,src/flask/typing.py,EXTERNAL,EXTERNAL
+src/flask/debughelpers.py,typing,src/flask/typing.py,EXTERNAL,EXTERNAL
+src/flask/globals.py,typing,src/flask/typing.py,EXTERNAL,EXTERNAL
+src/flask/helpers.py,typing,src/flask/typing.py,EXTERNAL,EXTERNAL
+src/flask/json/__init__.py,typing,src/flask/typing.py,EXTERNAL,EXTERNAL
+src/flask/json/provider.py,typing,src/flask/typing.py,EXTERNAL,EXTERNAL
+src/flask/json/tag.py,typing,src/flask/typing.py,EXTERNAL,EXTERNAL
+src/flask/logging.py,typing,src/flask/typing.py,EXTERNAL,EXTERNAL
+src/flask/scaffold.py,typing,src/flask/typing.py,EXTERNAL,EXTERNAL
+src/flask/sessions.py,typing,src/flask/typing.py,EXTERNAL,EXTERNAL
+src/flask/signals.py,typing,src/flask/typing.py,EXTERNAL,EXTERNAL
+src/flask/templating.py,typing,src/flask/typing.py,EXTERNAL,EXTERNAL
+src/flask/testing.py,typing,src/flask/typing.py,EXTERNAL,EXTERNAL
+src/flask/typing.py,typing,src/flask/typing.py,EXTERNAL,EXTERNAL
+src/flask/views.py,typing,src/flask/typing.py,EXTERNAL,EXTERNAL
+src/flask/wrappers.py,typing,src/flask/typing.py,EXTERNAL,EXTERNAL
+tests/typing/typing_app_decorators.py,typing,src/flask/typing.py,EXTERNAL,EXTERNAL
+tests/typing/typing_route.py,typing,src/flask/typing.py,EXTERNAL,EXTERNAL
+tests/test_views.py,flask.views,src/flask/views.py,INTERNAL,MAPPED
+tests/test_async.py,flask.views.MethodView,src/flask/views.py,INTERNAL,MAPPED
+tests/test_helpers.py,flask.views.MethodView,src/flask/views.py,INTERNAL,MAPPED
+tests/test_async.py,flask.views.View,src/flask/views.py,INTERNAL,MAPPED
+tests/typing/typing_route.py,flask.views.View,src/flask/views.py,INTERNAL,MAPPED
+tests/typing/typing_app_decorators.py,flask.Response,src/flask/wrappers.py,INTERNAL,MAPPED
+src/flask/app.py,flask.wrappers.Request,src/flask/wrappers.py,INTERNAL,MAPPED
+src/flask/ctx.py,flask.wrappers.Request,src/flask/wrappers.py,INTERNAL,MAPPED
+src/flask/globals.py,flask.wrappers.Request,src/flask/wrappers.py,INTERNAL,MAPPED
+src/flask/sessions.py,flask.wrappers.Request,src/flask/wrappers.py,INTERNAL,MAPPED
+src/flask/app.py,flask.wrappers.Response,src/flask/wrappers.py,INTERNAL,MAPPED
+src/flask/helpers.py,flask.wrappers.Response,src/flask/wrappers.py,INTERNAL,MAPPED
+src/flask/json/__init__.py,flask.wrappers.Response,src/flask/wrappers.py,INTERNAL,MAPPED
+src/flask/json/provider.py,flask.wrappers.Response,src/flask/wrappers.py,INTERNAL,MAPPED
+src/flask/scaffold.py,flask.wrappers.Response,src/flask/wrappers.py,INTERNAL,MAPPED
+src/flask/sessions.py,flask.wrappers.Response,src/flask/wrappers.py,INTERNAL,MAPPED
+tests/typing/typing_route.py,flask.wrappers.Response,src/flask/wrappers.py,INTERNAL,MAPPED
+tests/test_blueprints.py,blueprintapp.app,tests/test_apps/blueprintapp/__init__.py,EXTERNAL,EXTERNAL
+tests/test_templating.py,blueprintapp.app,tests/test_apps/blueprintapp/__init__.py,EXTERNAL,EXTERNAL
+tests/test_apps/blueprintapp/__init__.py,blueprintapp.apps.admin.admin,tests/test_apps/blueprintapp/apps/admin/__init__.py,EXTERNAL,EXTERNAL
+tests/test_apps/blueprintapp/__init__.py,blueprintapp.apps.frontend.frontend,tests/test_apps/blueprintapp/apps/frontend/__init__.py,EXTERNAL,EXTERNAL
+tests/test_cli.py,cliapp.app.testapp,tests/test_apps/cliapp/app.py,EXTERNAL,EXTERNAL
+,,,,
+,,,,
+,Total,In percentage:,,
+Dependencies in this repository,626,"100,00%",,
+External dependencies in this repository,337,"53,83%",,
+Internal dependencies in this repository,289,"46,17%",,
+,,,,
+Internal dependencies not mapped to a file - FAILURE,69,"23,88%",,
+Internal dependencies mapped to a file - SUCCESS,220,"76,12%",,
