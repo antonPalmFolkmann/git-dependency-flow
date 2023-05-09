@@ -1,0 +1,14 @@
+,zeeguu/api,pallets/flask,django/django,pandas-dev/pandas,pytorch/pytorch
+.py files,284,80,"2,737","1,509","3,531"
+Run time,3m59.942s,3m39.323s,8m21.949s,9m20.003s,14m57.622s
+Internal dependencies (ID),1143,289,11432,11941,23818
+ID mapped,1090,220,10610,6374,21741
+ID mapped in %,95.36%,76.12%,92.81%,53.38%,91.28%
+,,,,,
+,,,,,
+,zeeguu/api,pallets/flask,django/django,pandas-dev/pandas,pytorch/pytorch
+.py files,284,80,"2,737","1,509","3,531"
+Run time,3m59.942s,3m39.323s,8m21.949s,9m20.003s,14m57.622s
+Internal dependencies (ID),1143,289,11432,11941,23818
+ID mapped,1090,220,10610,6374,21741
+ID mapped in %,95.36%,76.12%,92.81%,53.38%,91.28%
