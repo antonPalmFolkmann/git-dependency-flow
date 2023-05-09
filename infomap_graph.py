@@ -1,16 +1,14 @@
 import csv
 import networkx as nx
 from infomap import Infomap
-import matplotlib.pyplot as plt
 
 
-def read_csv_file():
-    with open("data/new_edges.csv", 'r') as data:
+def create_digraph_from_csv():
+    with open("data/new_edges.csv", 'r') as edges:
         dg = nx.DiGraph()
+        data = csv.DictReader(edges)
 
-        dictionary = csv.DictReader(data)
-
-        for row in dictionary:
+        for row in data:
             importerFile = row["importerFile"]
             importedFile = row["importedFile"]
 
@@ -29,13 +27,8 @@ def read_csv_file():
     
 
 def main():
-    dg = read_csv_file()
-    """ plt.figure(figsize=(128,128)) 
-    nx.draw(dg, pos = nx.kamada_kawai_layout(dg), with_labels=True)
-    plt.axis('equal') 
-    plt.show()
-    plt.savefig("networkx.png") """
-
+    dg = create_digraph_from_csv()
+    
     im = Infomap(
         ftree=True,
         two_level=True,
@@ -44,9 +37,7 @@ def main():
     )
 
     im.add_networkx_graph(dg)
-
     im.run()
-
     im.write_flow_tree("flowmethod.ftree")
 
 
